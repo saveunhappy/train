@@ -1,4 +1,4 @@
-package com.jiawa.train;
+package com.jiawa.train.member.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @RequestMapping("hello")
     public String hello(){
-        return "hello world!!!";
+        return "hello world!!!!!!!!!";
     }
 }
