@@ -497,3 +497,40 @@ java.lang.NullPointerException: Cannot read field "generatedClass" because "data
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2023-04-21 23:03:52.454 ERROR c.j.t.common.controller.ControllerExceptionHandler:39   [32m1682089432418574  [0;39m 业务异常：手机号已注册
+2023-04-21 23:11:05.168 ERROR org.springframework.boot.SpringApplication        :820  [32m                  [0;39m Application run failed
+java.lang.NullPointerException: Cannot read field "generatedClass" because "data" is null
+	at org.springframework.cglib.proxy.Enhancer.nextInstance(Enhancer.java:783)
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:326)
+	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:567)
+	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:412)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:109)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:513)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:304)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:358)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:150)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at com.jiawa.train.member.config.MemberApplication.main(MemberApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2023-04-21 23:12:56.660 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682089976624923  [0;39m 业务异常：手机号已注册
+2023-04-21 23:13:05.929 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682089985916jj0  [0;39m 业务异常：手机号已注册
+2023-04-21 23:13:07.077 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m16820899870717zc  [0;39m 业务异常：手机号已注册
+2023-04-21 23:13:43.296 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682090023291ga0  [0;39m 业务异常：手机号已注册
+2023-04-21 23:13:52.138 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m168209003213186p  [0;39m 业务异常：手机号已注册
+2023-04-21 23:14:06.577 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682090046571i1k  [0;39m 业务异常：手机号已注册
+2023-04-21 23:15:20.702 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m16820901202591pc  [0;39m 业务异常：手机号已注册
+2023-04-21 23:15:28.217 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682090128210ugd  [0;39m 业务异常：手机号已注册
+2023-04-21 23:15:43.564 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682090143558b4c  [0;39m 业务异常：手机号已注册
+2023-04-21 23:15:44.783 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682090144777a1b  [0;39m 业务异常：手机号已注册
+2023-04-21 23:16:29.906 ERROR c.j.t.common.controller.ControllerExceptionHandler:54   [32m                  [0;39m 校验异常：【手机号】不能为空
+2023-04-21 23:16:34.892 ERROR c.j.t.common.controller.ControllerExceptionHandler:54   [32m                  [0;39m 校验异常：【手机号】不能为空
