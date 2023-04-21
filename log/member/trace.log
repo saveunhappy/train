@@ -33,3 +33,5 @@
 2023-04-21 20:48:06.155 DEBUG c.j.t.member.mapper.MemberMapper.countByExample   :137  [32m168208128567356y  [0;39m <==      Total: 1
 2023-04-21 20:48:06.162 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m168208128567356y  [0;39m 返回结果: 1
 2023-04-21 20:48:06.163 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m168208128567356y  [0;39m ------------- 结束 耗时：490 ms -------------
+2023-04-21 22:16:09.407 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-21 22:16:09.418 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
