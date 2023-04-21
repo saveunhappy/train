@@ -67,3 +67,5 @@
 2023-04-21 22:56:13.137 INFO  com.jiawa.train.gateway.config.GateWayApplication :57   [32m                  [0;39m Started GateWayApplication in 4.572 seconds (process running for 5.347)
 2023-04-21 22:56:13.142 INFO  com.jiawa.train.gateway.config.GateWayApplication :17   [32m                  [0;39m 启动成功！！
 2023-04-21 22:56:13.143 INFO  com.jiawa.train.gateway.config.GateWayApplication :18   [32m                  [0;39m 网关地址: 	http://127.0.0.1:8000
+2023-04-21 22:56:45.252 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:22:56:44 +0800] "POST /member/member/register HTTP/1.1" 200 55 913
+2023-04-21 22:56:49.227 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:22:56:49 +0800] "POST /member/member/register HTTP/1.1" 500 8176 49

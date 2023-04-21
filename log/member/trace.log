@@ -181,3 +181,435 @@ java.lang.RuntimeException: 手机号已注册
 2023-04-21 22:56:17.952 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 4.071 seconds (process running for 4.934)
 2023-04-21 22:56:17.956 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
 2023-04-21 22:56:17.957 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-04-21 22:56:44.635 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-21 22:56:44.635 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-21 22:56:44.637 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-04-21 22:56:44.679 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682089004674522  [0;39m ------------- 开始 -------------
+2023-04-21 22:56:44.680 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682089004674522  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
+2023-04-21 22:56:44.680 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682089004674522  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
+2023-04-21 22:56:44.681 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682089004674522  [0;39m 远程地址: 127.0.0.1
+2023-04-21 22:56:44.738 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682089004674522  [0;39m 请求参数: [{"mobile":"12341"}]
+2023-04-21 22:56:44.789 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1682089004674522  [0;39m HikariPool-1 - Starting...
+2023-04-21 22:56:45.097 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1682089004674522  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4921ae8f
+2023-04-21 22:56:45.100 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1682089004674522  [0;39m HikariPool-1 - Start completed.
+2023-04-21 22:56:45.109 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682089004674522  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-04-21 22:56:45.136 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682089004674522  [0;39m ==> Parameters: 12341(String)
+2023-04-21 22:56:45.157 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682089004674522  [0;39m <==      Total: 0
+2023-04-21 22:56:45.167 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682089004674522  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
+2023-04-21 22:56:45.168 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682089004674522  [0;39m ==> Parameters: 1682089005167(Long), 12341(String)
+2023-04-21 22:56:45.174 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682089004674522  [0;39m <==    Updates: 1
+2023-04-21 22:56:45.178 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682089004674522  [0;39m 返回结果: {"content":1682089005167,"success":true}
+2023-04-21 22:56:45.179 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682089004674522  [0;39m ------------- 结束 耗时：505 ms -------------
+2023-04-21 22:56:49.182 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m16820890091822aw  [0;39m ------------- 开始 -------------
+2023-04-21 22:56:49.183 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m16820890091822aw  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
+2023-04-21 22:56:49.184 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m16820890091822aw  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
+2023-04-21 22:56:49.184 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m16820890091822aw  [0;39m 远程地址: 127.0.0.1
+2023-04-21 22:56:49.185 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m16820890091822aw  [0;39m 请求参数: [{"mobile":"12341"}]
+2023-04-21 22:56:49.187 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16820890091822aw  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-04-21 22:56:49.187 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16820890091822aw  [0;39m ==> Parameters: 12341(String)
+2023-04-21 22:56:49.189 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m16820890091822aw  [0;39m <==    Columns: id, mobile
+2023-04-21 22:56:49.189 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m16820890091822aw  [0;39m <==        Row: 1682089005167, 12341
+2023-04-21 22:56:49.191 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16820890091822aw  [0;39m <==      Total: 1
+2023-04-21 22:56:49.195 ERROR o.a.c.c.C.[.[.[/member].[dispatcherServlet]       :175  [32m16820890091822aw  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/member] threw exception [Request processing failed: java.lang.RuntimeException: 手机号已注册] with root cause
+java.lang.RuntimeException: 手机号已注册
+	at com.jiawa.train.member.service.MemberService.register(MemberService.java:31)
+	at com.jiawa.train.member.controller.MemberController.register(MemberController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.jiawa.train.common.aspect.LogAspect.doAround(LogAspect.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jiawa.train.member.controller.MemberController$$SpringCGLIB$$0.register(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-21 22:58:20.738 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682089100738iua  [0;39m ------------- 开始 -------------
+2023-04-21 22:58:20.739 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682089100738iua  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
+2023-04-21 22:58:20.739 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682089100738iua  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
+2023-04-21 22:58:20.739 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682089100738iua  [0;39m 远程地址: 127.0.0.1
+2023-04-21 22:58:20.740 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682089100738iua  [0;39m 请求参数: [{"mobile":"12341"}]
+2023-04-21 22:58:20.742 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682089100738iua  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-04-21 22:58:20.743 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682089100738iua  [0;39m ==> Parameters: 12341(String)
+2023-04-21 22:58:20.744 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682089100738iua  [0;39m <==    Columns: id, mobile
+2023-04-21 22:58:20.745 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682089100738iua  [0;39m <==        Row: 1682089005167, 12341
+2023-04-21 22:58:20.745 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682089100738iua  [0;39m <==      Total: 1
+2023-04-21 22:58:20.746 ERROR o.a.c.c.C.[.[.[/member].[dispatcherServlet]       :175  [32m1682089100738iua  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/member] threw exception [Request processing failed: java.lang.RuntimeException: 手机号已注册] with root cause
+java.lang.RuntimeException: 手机号已注册
+	at com.jiawa.train.member.service.MemberService.register(MemberService.java:31)
+	at com.jiawa.train.member.controller.MemberController.register(MemberController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.jiawa.train.common.aspect.LogAspect.doAround(LogAspect.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jiawa.train.member.controller.MemberController$$SpringCGLIB$$0.register(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-21 22:58:34.081 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+2023-04-21 22:58:34.110 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:34.111 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-21 22:58:34.113 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-21 22:58:34.116 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2023-04-21 22:58:34.117 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:34.119 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:34.123 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-21 22:58:34.131 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-04-21 22:58:34.707 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 14748 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
+2023-04-21 22:58:34.708 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-21 22:58:35.391 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=d0d07d53-e349-3a39-aa2b-8bf36b4255df
+2023-04-21 22:58:35.488 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-04-21 22:58:35.489 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:35.490 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-21 22:58:35.491 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-04-21 22:58:35.515 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-21 22:58:35.516 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 801 ms
+2023-04-21 22:58:35.536 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberController': Lookup method resolution failed
+2023-04-21 22:58:35.537 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-21 22:58:35.549 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-21 22:58:35.588 ERROR org.springframework.boot.SpringApplication        :820  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:470)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:340)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1283)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at com.jiawa.train.member.config.MemberApplication.main(MemberApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.jiawa.train.member.controller.MemberController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@61e1515d]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:448)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/jiawa/train/common/resp/CommonResp
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.jiawa.train.common.resp.CommonResp
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 28 common frames omitted
+2023-04-21 22:58:39.502 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 14748 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
+2023-04-21 22:58:39.502 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-21 22:58:39.772 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=7ccd3b32-962f-387e-9c69-6284ce1b84ed
+2023-04-21 22:58:39.868 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-04-21 22:58:39.869 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:39.869 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-21 22:58:39.870 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-04-21 22:58:39.887 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-21 22:58:39.888 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 383 ms
+2023-04-21 22:58:40.206 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-21 22:58:40.472 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:40.477 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-04-21 22:58:40.753 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 1.682 seconds (process running for 147.735)
+2023-04-21 22:58:40.758 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-04-21 22:58:40.758 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
+2023-04-21 22:58:40.759 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-04-21 22:58:41.649 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2023-04-21 22:58:41.667 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:41.667 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-21 22:58:41.669 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:41.670 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:42.009 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 14748 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
+2023-04-21 22:58:42.010 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-21 22:58:42.216 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=7ccd3b32-962f-387e-9c69-6284ce1b84ed
+2023-04-21 22:58:42.301 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-04-21 22:58:42.301 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:42.301 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-21 22:58:42.302 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-04-21 22:58:42.317 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-21 22:58:42.318 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 306 ms
+2023-04-21 22:58:42.603 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-21 22:58:42.916 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:42.921 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-04-21 22:58:43.195 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 1.459 seconds (process running for 150.177)
+2023-04-21 22:58:43.196 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-04-21 22:58:43.197 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
+2023-04-21 22:58:43.198 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-04-21 22:58:51.160 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 18 class path changes (0 additions, 18 deletions, 0 modifications)
+2023-04-21 22:58:51.184 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:51.185 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-21 22:58:51.186 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:51.188 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-04-21 22:58:58.329 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 14748 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
+2023-04-21 22:58:58.330 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-21 22:58:58.507 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=7ccd3b32-962f-387e-9c69-6284ce1b84ed
+2023-04-21 22:58:58.586 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-04-21 22:58:58.587 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-21 22:58:58.587 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-04-21 22:58:58.600 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-21 22:58:58.600 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 268 ms
+2023-04-21 22:58:58.902 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-21 22:58:59.163 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-04-21 22:58:59.484 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 1.513 seconds (process running for 166.467)
+2023-04-21 22:58:59.487 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-04-21 22:58:59.487 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
+2023-04-21 22:58:59.488 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-04-21 22:59:00.446 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-21 22:59:00.446 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-21 22:59:00.447 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-04-21 22:59:00.450 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m168208914044953n  [0;39m ------------- 开始 -------------
+2023-04-21 22:59:00.450 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m168208914044953n  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
+2023-04-21 22:59:00.450 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m168208914044953n  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
+2023-04-21 22:59:00.451 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m168208914044953n  [0;39m 远程地址: 127.0.0.1
+2023-04-21 22:59:00.452 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m168208914044953n  [0;39m 请求参数: [{"mobile":"12341"}]
+2023-04-21 22:59:00.456 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m168208914044953n  [0;39m HikariPool-2 - Starting...
+2023-04-21 22:59:00.481 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m168208914044953n  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ab3ed70
+2023-04-21 22:59:00.481 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m168208914044953n  [0;39m HikariPool-2 - Start completed.
+2023-04-21 22:59:00.481 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168208914044953n  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-04-21 22:59:00.482 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168208914044953n  [0;39m ==> Parameters: 12341(String)
+2023-04-21 22:59:00.483 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m168208914044953n  [0;39m <==    Columns: id, mobile
+2023-04-21 22:59:00.483 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m168208914044953n  [0;39m <==        Row: 1682089005167, 12341
+2023-04-21 22:59:00.484 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168208914044953n  [0;39m <==      Total: 1
+2023-04-21 22:59:00.485 ERROR c.j.t.common.controller.ControllerExceptionHandler:27   [32m168208914044953n  [0;39m 系统异常：
+java.lang.RuntimeException: 手机号已注册
+	at com.jiawa.train.member.service.MemberService.register(MemberService.java:31)
+	at com.jiawa.train.member.controller.MemberController.register(MemberController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.jiawa.train.common.aspect.LogAspect.doAround(LogAspect.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jiawa.train.member.controller.MemberController$$SpringCGLIB$$0.register(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-21 22:59:00.507 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m168208914044953n  [0;39m Resolved [java.lang.RuntimeException: 手机号已注册]
