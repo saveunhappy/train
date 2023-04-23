@@ -155,3 +155,35 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 2023-04-21 23:15:44.787 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:15:44 +0800] "POST /member/member/register HTTP/1.1" 200 63 14
 2023-04-21 23:16:29.912 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:16:29 +0800] "POST /member/member/register HTTP/1.1" 200 72 84
 2023-04-21 23:16:34.896 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:16:34 +0800] "POST /member/member/register HTTP/1.1" 200 72 8
+2023-04-21 23:24:58.055 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:24:57 +0800] "POST /member/member/register HTTP/1.1" 200 55 66
+2023-04-21 23:25:13.286 ERROR o.s.b.a.w.r.error.AbstractErrorWebExceptionHandler:102  [32m                  [0;39m [5cfa7db0-8]  500 Server Error for HTTP POST "/member/member/register"
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:8001
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/member/member/register" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-21 23:25:13.348 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:25:13 +0800] "POST /member/member/register HTTP/1.1" 500 148 93
+2023-04-21 23:25:15.579 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:25:15 +0800] "POST /member/member/register HTTP/1.1" 200 63 58
+2023-04-21 23:25:17.359 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:25:17 +0800] "POST /member/member/register HTTP/1.1" 200 63 20
+2023-04-21 23:25:18.728 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:25:18 +0800] "POST /member/member/register HTTP/1.1" 200 63 12
+2023-04-21 23:25:20.472 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:25:20 +0800] "POST /member/member/register HTTP/1.1" 200 63 14
+2023-04-21 23:25:23.819 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:25:23 +0800] "POST /member/member/register HTTP/1.1" 200 688 91
+2023-04-21 23:25:53.793 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:25:53 +0800] "POST /member/member/register HTTP/1.1" 200 688 111
+2023-04-21 23:25:56.555 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:25:56 +0800] "POST /member/member/register HTTP/1.1" 200 688 17
+2023-04-21 23:26:47.807 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:26:47 +0800] "POST /member/member/register HTTP/1.1" 200 688 15
+2023-04-21 23:27:05.056 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [21/4月/2023:23:27:05 +0800] "POST /member/member/register HTTP/1.1" 200 61 19
