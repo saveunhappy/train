@@ -1,3 +1,6 @@
 2023-04-24 21:00:06.371 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682341205888z5m  [0;39m 业务异常：手机号已注册
 2023-04-24 21:03:56.624 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682341436155hp1  [0;39m 业务异常：手机号已注册
 2023-04-24 21:04:31.285 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682341471275mvq  [0;39m 业务异常：手机号已注册
+2023-04-24 21:34:53.169 ERROR c.j.t.common.controller.ControllerExceptionHandler:54   [32m                  [0;39m 校验异常：【手机号】不能为空
+2023-04-24 21:35:43.070 ERROR c.j.t.common.controller.ControllerExceptionHandler:54   [32m                  [0;39m 校验异常：【手机号】不能为空
+2023-04-24 21:35:47.628 ERROR c.j.t.common.controller.ControllerExceptionHandler:54   [32m                  [0;39m 校验异常：【手机号】不能为空

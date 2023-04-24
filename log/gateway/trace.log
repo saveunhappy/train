@@ -20,3 +20,13 @@
 2023-04-24 20:30:39.698 INFO  com.jiawa.train.gateway.config.GateWayApplication :57   [32m                  [0;39m Started GateWayApplication in 4.36 seconds (process running for 8.066)
 2023-04-24 20:30:39.701 INFO  com.jiawa.train.gateway.config.GateWayApplication :17   [32m                  [0;39m 启动成功！！
 2023-04-24 20:30:39.702 INFO  com.jiawa.train.gateway.config.GateWayApplication :18   [32m                  [0;39m 网关地址: 	http://127.0.0.1:8000
+2023-04-24 20:59:12.645 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:20:59:11 +0800] "POST /member/member/register HTTP/1.1" 200 61 1112
+2023-04-24 21:00:06.436 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:21:00:05 +0800] "POST /member/member/register HTTP/1.1" 200 63 731
+2023-04-24 21:00:14.387 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:21:00:14 +0800] "POST /member/member/register HTTP/1.1" 200 61 56
+2023-04-24 21:03:56.686 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:21:03:55 +0800] "POST /member/member/register HTTP/1.1" 200 63 696
+2023-04-24 21:04:18.893 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:21:04:18 +0800] "POST /member/member/register HTTP/1.1" 200 61 45
+2023-04-24 21:04:31.289 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:21:04:31 +0800] "POST /member/member/register HTTP/1.1" 200 63 19
+2023-04-24 21:04:58.081 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:21:04:57 +0800] "POST /member/member/register HTTP/1.1" 200 61 911
+2023-04-24 21:05:29.662 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:21:05:18 +0800] "POST /member/member/send-code HTTP/1.1" 200 46 11573
+2023-04-24 21:20:17.611 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:21:20:16 +0800] "POST /member/member/login HTTP/1.1" 200 91 828
+2023-04-24 21:32:19.004 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [24/4月/2023:21:32:19 +0800] "OPTIONS /member/member/send-code HTTP/1.1" 403 0 2
