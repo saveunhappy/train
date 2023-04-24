@@ -30,3 +30,31 @@
 2023-04-24 21:05:29.662 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:21:05:18 +0800] "POST /member/member/send-code HTTP/1.1" 200 46 11573
 2023-04-24 21:20:17.611 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:21:20:16 +0800] "POST /member/member/login HTTP/1.1" 200 91 828
 2023-04-24 21:32:19.004 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [24/4月/2023:21:32:19 +0800] "OPTIONS /member/member/send-code HTTP/1.1" 403 0 2
+2023-04-24 21:34:36.489 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 21:34:36.534 INFO  com.jiawa.train.gateway.config.GateWayApplication :51   [32m                  [0;39m Starting GateWayApplication using Java 17.0.6 with PID 14048 (D:\devCode\train\gateway\target\classes started by HJT in D:\devCode\train)
+2023-04-24 21:34:36.535 INFO  com.jiawa.train.gateway.config.GateWayApplication :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-24 21:34:37.185 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=e483f644-f763-329c-a4ca-ce7da3562b8f
+2023-04-24 21:34:38.104 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-04-24 21:34:38.105 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-04-24 21:34:38.105 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-04-24 21:34:38.105 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-04-24 21:34:38.105 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-04-24 21:34:38.105 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-04-24 21:34:38.105 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-04-24 21:34:38.105 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-04-24 21:34:38.106 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-04-24 21:34:38.106 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-04-24 21:34:38.106 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-24 21:34:38.106 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-04-24 21:34:38.107 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-04-24 21:34:38.107 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-24 21:34:38.827 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-04-24 21:34:39.358 INFO  com.jiawa.train.gateway.config.GateWayApplication :57   [32m                  [0;39m Started GateWayApplication in 3.69 seconds (process running for 4.309)
+2023-04-24 21:34:39.362 INFO  com.jiawa.train.gateway.config.GateWayApplication :17   [32m                  [0;39m 启动成功！！
+2023-04-24 21:34:39.362 INFO  com.jiawa.train.gateway.config.GateWayApplication :18   [32m                  [0;39m 网关地址: 	http://127.0.0.1:8000
+2023-04-24 21:34:53.013 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [24/4月/2023:21:34:52 +0800] "OPTIONS /member/member/send-code HTTP/1.1" 200 0 75
+2023-04-24 21:34:53.182 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [24/4月/2023:21:34:53 +0800] "POST /member/member/send-code HTTP/1.1" 200 72 166
+2023-04-24 21:35:43.074 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [24/4月/2023:21:35:43 +0800] "POST /member/member/send-code HTTP/1.1" 200 72 9
+2023-04-24 21:35:47.632 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [24/4月/2023:21:35:47 +0800] "POST /member/member/send-code HTTP/1.1" 200 72 7
+2023-04-24 21:47:05.330 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [24/4月/2023:21:47:04 +0800] "POST /member/member/send-code HTTP/1.1" 200 46 761
+2023-04-24 21:47:14.005 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [24/4月/2023:21:47:13 +0800] "POST /member/member/send-code HTTP/1.1" 200 46 28
