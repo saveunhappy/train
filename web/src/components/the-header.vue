@@ -3,15 +3,15 @@
         <div class="logo" />
         <div style="float: right; color: white;">
             您好：{{member.mobile}} &nbsp;&nbsp;
-            <router-link to="/login">
+            <router-link to="/login" style="color: white;">
                 退出登录
             </router-link>
         </div>
         <a-menu
-                v-model:selectedKeys="selectedKeys1"
-                theme="dark"
-                mode="horizontal"
-                :style="{ lineHeight: '64px' }"
+            v-model:selectedKeys="selectedKeys1"
+            theme="dark"
+            mode="horizontal"
+            :style="{ lineHeight: '64px' }"
         >
             <a-menu-item key="1">nav 11</a-menu-item>
             <a-menu-item key="2">nav 2</a-menu-item>
@@ -28,6 +28,7 @@ export default defineComponent({
     name: "the-header-view",
     setup() {
         let member = store.state.member;
+
         return {
             selectedKeys1: ref(['2']),
             member
