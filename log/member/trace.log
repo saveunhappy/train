@@ -1,678 +1,116 @@
-2023-04-24 20:30:39.776 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-04-24 20:30:39.828 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 3364 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
-2023-04-24 20:30:39.831 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-04-24 20:30:39.895 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-24 20:30:39.896 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-04-24 20:30:40.830 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6cfe734e-a5e2-3f63-8ed2-cb197bd7083e
-2023-04-24 20:30:41.544 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-04-24 20:30:41.552 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-04-24 20:30:41.553 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-04-24 20:30:41.553 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-04-24 20:30:41.614 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-04-24 20:30:41.614 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1717 ms
-2023-04-24 20:30:42.579 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-04-24 20:30:42.897 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-04-24 20:30:42.916 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
-2023-04-24 20:30:43.164 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 4.329 seconds (process running for 5.316)
-2023-04-24 20:30:43.167 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
-2023-04-24 20:30:43.168 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
-2023-04-24 20:58:09.125 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-04-24 20:58:09.176 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 3348 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
-2023-04-24 20:58:09.178 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-04-24 20:58:09.240 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-24 20:58:09.241 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-04-24 20:58:10.248 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6cfe734e-a5e2-3f63-8ed2-cb197bd7083e
-2023-04-24 20:58:11.117 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-04-24 20:58:11.128 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-04-24 20:58:11.131 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-04-24 20:58:11.132 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-04-24 20:58:11.204 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-04-24 20:58:11.205 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1964 ms
-2023-04-24 20:58:12.311 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-04-24 20:58:12.688 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-04-24 20:58:12.711 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
-2023-04-24 20:58:12.996 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 4.886 seconds (process running for 5.969)
-2023-04-24 20:58:13.002 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
-2023-04-24 20:58:13.003 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
-2023-04-24 20:59:11.803 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-24 20:59:11.803 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-04-24 20:59:11.805 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2023-04-24 20:59:11.888 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m16823411518812wi  [0;39m ------------- 开始 -------------
-2023-04-24 20:59:11.889 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m16823411518812wi  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2023-04-24 20:59:11.890 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m16823411518812wi  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2023-04-24 20:59:11.890 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m16823411518812wi  [0;39m 远程地址: 127.0.0.1
-2023-04-24 20:59:11.956 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m16823411518812wi  [0;39m 请求参数: [{"mobile":"13022556699"}]
-2023-04-24 20:59:12.013 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m16823411518812wi  [0;39m HikariPool-1 - Starting...
-2023-04-24 20:59:12.458 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m16823411518812wi  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4317833c
-2023-04-24 20:59:12.460 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m16823411518812wi  [0;39m HikariPool-1 - Start completed.
-2023-04-24 20:59:12.470 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823411518812wi  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 20:59:12.499 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823411518812wi  [0;39m ==> Parameters: 13022556699(String)
-2023-04-24 20:59:12.536 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823411518812wi  [0;39m <==      Total: 0
-2023-04-24 20:59:12.557 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m16823411518812wi  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
-2023-04-24 20:59:12.558 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m16823411518812wi  [0;39m ==> Parameters: 1650484535990816768(Long), 13022556699(String)
-2023-04-24 20:59:12.567 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m16823411518812wi  [0;39m <==    Updates: 1
-2023-04-24 20:59:12.571 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m16823411518812wi  [0;39m 返回结果: {"content":1650484535990816768,"success":true}
-2023-04-24 20:59:12.571 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m16823411518812wi  [0;39m ------------- 结束 耗时：690 ms -------------
-2023-04-24 20:59:52.542 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2023-04-24 20:59:52.555 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2023-04-24 20:59:56.165 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-04-24 20:59:56.216 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 11516 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
-2023-04-24 20:59:56.218 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-04-24 20:59:56.279 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-24 20:59:56.280 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-04-24 20:59:57.164 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6cfe734e-a5e2-3f63-8ed2-cb197bd7083e
-2023-04-24 20:59:57.906 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-04-24 20:59:57.917 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-04-24 20:59:57.918 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-04-24 20:59:57.919 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-04-24 20:59:57.986 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-04-24 20:59:57.987 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1707 ms
-2023-04-24 20:59:58.905 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-04-24 20:59:59.217 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-04-24 20:59:59.236 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
-2023-04-24 20:59:59.482 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 4.142 seconds (process running for 4.886)
-2023-04-24 20:59:59.486 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
-2023-04-24 20:59:59.487 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
-2023-04-24 21:00:05.785 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-24 21:00:05.786 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-04-24 21:00:05.787 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2023-04-24 21:00:05.894 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682341205888z5m  [0;39m ------------- 开始 -------------
-2023-04-24 21:00:05.895 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682341205888z5m  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2023-04-24 21:00:05.895 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682341205888z5m  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2023-04-24 21:00:05.895 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682341205888z5m  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:00:05.950 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682341205888z5m  [0;39m 请求参数: [{"mobile":"13022556699"}]
-2023-04-24 21:00:06.004 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1682341205888z5m  [0;39m HikariPool-1 - Starting...
-2023-04-24 21:00:06.288 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1682341205888z5m  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a995011
-2023-04-24 21:00:06.291 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1682341205888z5m  [0;39m HikariPool-1 - Start completed.
-2023-04-24 21:00:06.300 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341205888z5m  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:00:06.330 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341205888z5m  [0;39m ==> Parameters: 13022556699(String)
-2023-04-24 21:00:06.354 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682341205888z5m  [0;39m <==    Columns: id, mobile
-2023-04-24 21:00:06.354 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682341205888z5m  [0;39m <==        Row: 1650484535990816768, 13022556699
-2023-04-24 21:00:06.356 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341205888z5m  [0;39m <==      Total: 1
-2023-04-24 21:00:06.371 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682341205888z5m  [0;39m 业务异常：手机号已注册
-2023-04-24 21:00:06.434 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1682341205888z5m  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
-2023-04-24 21:00:14.337 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m16823412143371f0  [0;39m ------------- 开始 -------------
-2023-04-24 21:00:14.337 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m16823412143371f0  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2023-04-24 21:00:14.338 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m16823412143371f0  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2023-04-24 21:00:14.338 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m16823412143371f0  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:00:14.338 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m16823412143371f0  [0;39m 请求参数: [{"mobile":"13022556691"}]
-2023-04-24 21:00:14.340 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823412143371f0  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:00:14.340 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823412143371f0  [0;39m ==> Parameters: 13022556691(String)
-2023-04-24 21:00:14.342 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823412143371f0  [0;39m <==      Total: 0
-2023-04-24 21:00:14.356 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m16823412143371f0  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
-2023-04-24 21:00:14.358 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m16823412143371f0  [0;39m ==> Parameters: 1650484795194609664(Long), 13022556691(String)
-2023-04-24 21:00:14.372 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m16823412143371f0  [0;39m <==    Updates: 1
-2023-04-24 21:00:14.377 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m16823412143371f0  [0;39m 返回结果: {"content":1650484795194609664,"success":true}
-2023-04-24 21:00:14.377 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m16823412143371f0  [0;39m ------------- 结束 耗时：41 ms -------------
-2023-04-24 21:03:40.960 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2023-04-24 21:03:40.970 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2023-04-24 21:03:46.522 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-04-24 21:03:46.571 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 2832 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
-2023-04-24 21:03:46.573 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-04-24 21:03:46.628 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-24 21:03:46.628 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-04-24 21:03:47.462 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6cfe734e-a5e2-3f63-8ed2-cb197bd7083e
-2023-04-24 21:03:48.262 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-04-24 21:03:48.273 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-04-24 21:03:48.274 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-04-24 21:03:48.275 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-04-24 21:03:48.358 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-04-24 21:03:48.359 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1730 ms
-2023-04-24 21:03:49.375 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-04-24 21:03:49.719 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-04-24 21:03:49.738 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
-2023-04-24 21:03:50.056 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 4.49 seconds (process running for 5.28)
-2023-04-24 21:03:50.060 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
-2023-04-24 21:03:50.062 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
-2023-04-24 21:03:56.055 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-24 21:03:56.056 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-04-24 21:03:56.057 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2023-04-24 21:03:56.160 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682341436155hp1  [0;39m ------------- 开始 -------------
-2023-04-24 21:03:56.161 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682341436155hp1  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2023-04-24 21:03:56.162 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682341436155hp1  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2023-04-24 21:03:56.162 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682341436155hp1  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:03:56.217 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682341436155hp1  [0;39m 请求参数: [{"mobile":"13022556691"}]
-2023-04-24 21:03:56.271 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1682341436155hp1  [0;39m HikariPool-1 - Starting...
-2023-04-24 21:03:56.551 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1682341436155hp1  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@739f0089
-2023-04-24 21:03:56.554 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1682341436155hp1  [0;39m HikariPool-1 - Start completed.
-2023-04-24 21:03:56.563 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341436155hp1  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:03:56.589 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341436155hp1  [0;39m ==> Parameters: 13022556691(String)
-2023-04-24 21:03:56.610 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682341436155hp1  [0;39m <==    Columns: id, mobile
-2023-04-24 21:03:56.610 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682341436155hp1  [0;39m <==        Row: 1650484795194609664, 13022556691
-2023-04-24 21:03:56.612 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341436155hp1  [0;39m <==      Total: 1
-2023-04-24 21:03:56.624 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682341436155hp1  [0;39m 业务异常：手机号已注册
-2023-04-24 21:03:56.683 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1682341436155hp1  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
-2023-04-24 21:04:18.853 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682341458853xox  [0;39m ------------- 开始 -------------
-2023-04-24 21:04:18.854 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682341458853xox  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2023-04-24 21:04:18.854 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682341458853xox  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2023-04-24 21:04:18.854 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682341458853xox  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:04:18.854 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682341458853xox  [0;39m 请求参数: [{"mobile":"13022556622"}]
-2023-04-24 21:04:18.856 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341458853xox  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:04:18.856 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341458853xox  [0;39m ==> Parameters: 13022556622(String)
-2023-04-24 21:04:18.858 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341458853xox  [0;39m <==      Total: 0
-2023-04-24 21:04:18.874 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682341458853xox  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
-2023-04-24 21:04:18.875 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682341458853xox  [0;39m ==> Parameters: 1650485820777435136(Long), 13022556622(String)
-2023-04-24 21:04:18.880 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682341458853xox  [0;39m <==    Updates: 1
-2023-04-24 21:04:18.885 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682341458853xox  [0;39m 返回结果: {"content":1650485820777435136,"success":true}
-2023-04-24 21:04:18.886 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682341458853xox  [0;39m ------------- 结束 耗时：33 ms -------------
-2023-04-24 21:04:31.275 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682341471275mvq  [0;39m ------------- 开始 -------------
-2023-04-24 21:04:31.275 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682341471275mvq  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2023-04-24 21:04:31.276 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682341471275mvq  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2023-04-24 21:04:31.276 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682341471275mvq  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:04:31.277 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682341471275mvq  [0;39m 请求参数: [{"mobile":"13022556622"}]
-2023-04-24 21:04:31.278 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341471275mvq  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:04:31.279 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341471275mvq  [0;39m ==> Parameters: 13022556622(String)
-2023-04-24 21:04:31.283 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682341471275mvq  [0;39m <==    Columns: id, mobile
-2023-04-24 21:04:31.283 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682341471275mvq  [0;39m <==        Row: 1650485820777435136, 13022556622
-2023-04-24 21:04:31.284 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341471275mvq  [0;39m <==      Total: 1
-2023-04-24 21:04:31.285 ERROR c.j.t.common.controller.ControllerExceptionHandler:40   [32m1682341471275mvq  [0;39m 业务异常：手机号已注册
-2023-04-24 21:04:31.286 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1682341471275mvq  [0;39m Resolved [com.jiawa.train.common.exception.BusinessException]
-2023-04-24 21:04:38.682 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2023-04-24 21:04:38.689 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2023-04-24 21:04:44.183 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-04-24 21:04:44.240 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 15168 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
-2023-04-24 21:04:44.242 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-04-24 21:04:44.315 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-24 21:04:44.316 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-04-24 21:04:45.311 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6cfe734e-a5e2-3f63-8ed2-cb197bd7083e
-2023-04-24 21:04:46.174 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-04-24 21:04:46.185 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-04-24 21:04:46.187 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-04-24 21:04:46.188 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-04-24 21:04:46.268 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-04-24 21:04:46.269 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1952 ms
-2023-04-24 21:04:47.333 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-04-24 21:04:47.658 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-04-24 21:04:47.687 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
-2023-04-24 21:04:47.947 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 4.571 seconds (process running for 6.632)
-2023-04-24 21:04:47.950 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
-2023-04-24 21:04:47.951 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
-2023-04-24 21:04:57.254 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-24 21:04:57.255 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-04-24 21:04:57.256 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2023-04-24 21:04:57.396 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682341497387frs  [0;39m ------------- 开始 -------------
-2023-04-24 21:04:57.398 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682341497387frs  [0;39m 请求地址: http://127.0.0.1:8001/member/member/register POST
-2023-04-24 21:04:57.399 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682341497387frs  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.register
-2023-04-24 21:04:57.399 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682341497387frs  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:04:57.464 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682341497387frs  [0;39m 请求参数: [{"mobile":"13022551111"}]
-2023-04-24 21:04:57.524 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1682341497387frs  [0;39m HikariPool-1 - Starting...
-2023-04-24 21:04:57.873 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1682341497387frs  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ddf31df
-2023-04-24 21:04:57.877 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1682341497387frs  [0;39m HikariPool-1 - Start completed.
-2023-04-24 21:04:57.891 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341497387frs  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:04:57.925 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341497387frs  [0;39m ==> Parameters: 13022551111(String)
-2023-04-24 21:04:57.950 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341497387frs  [0;39m <==      Total: 0
-2023-04-24 21:04:57.975 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682341497387frs  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
-2023-04-24 21:04:57.976 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682341497387frs  [0;39m ==> Parameters: 1650485984778915840(Long), 13022551111(String)
-2023-04-24 21:04:57.984 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682341497387frs  [0;39m <==    Updates: 1
-2023-04-24 21:04:57.998 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682341497387frs  [0;39m 返回结果: {"content":1650485984778915840,"success":true}
-2023-04-24 21:04:57.998 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682341497387frs  [0;39m ------------- 结束 耗时：611 ms -------------
-2023-04-24 21:05:18.103 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682341518103zjw  [0;39m ------------- 开始 -------------
-2023-04-24 21:05:18.104 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682341518103zjw  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
-2023-04-24 21:05:18.104 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682341518103zjw  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.sendCode
-2023-04-24 21:05:18.105 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682341518103zjw  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:05:18.107 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682341518103zjw  [0;39m 请求参数: [{"mobile":"13022551111"}]
-2023-04-24 21:05:21.319 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341518103zjw  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:05:21.319 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341518103zjw  [0;39m ==> Parameters: 13022551111(String)
-2023-04-24 21:05:21.321 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682341518103zjw  [0;39m <==    Columns: id, mobile
-2023-04-24 21:05:21.321 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682341518103zjw  [0;39m <==        Row: 1650485984778915840, 13022551111
-2023-04-24 21:05:21.323 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682341518103zjw  [0;39m <==      Total: 1
-2023-04-24 21:05:21.324 INFO  com.jiawa.train.member.service.MemberService      :63   [32m1682341518103zjw  [0;39m 手机号存在，不插入记录
-2023-04-24 21:05:27.355 INFO  com.jiawa.train.member.service.MemberService      :69   [32m1682341518103zjw  [0;39m 生成短信验证码：8888
-2023-04-24 21:05:27.942 INFO  com.jiawa.train.member.service.MemberService      :72   [32m1682341518103zjw  [0;39m 保存短信记录表
-2023-04-24 21:05:28.342 INFO  com.jiawa.train.member.service.MemberService      :75   [32m1682341518103zjw  [0;39m 对接短信通道
-2023-04-24 21:05:29.657 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682341518103zjw  [0;39m 返回结果: {"success":true}
-2023-04-24 21:05:29.657 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682341518103zjw  [0;39m ------------- 结束 耗时：11554 ms -------------
-2023-04-24 21:20:03.812 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2023-04-24 21:20:03.821 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2023-04-24 21:20:09.391 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-04-24 21:20:09.440 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 15020 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
-2023-04-24 21:20:09.442 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-04-24 21:20:09.509 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-24 21:20:09.509 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-04-24 21:20:10.365 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6cfe734e-a5e2-3f63-8ed2-cb197bd7083e
-2023-04-24 21:20:11.103 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-04-24 21:20:11.115 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-04-24 21:20:11.116 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-04-24 21:20:11.116 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-04-24 21:20:11.177 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-04-24 21:20:11.178 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1667 ms
-2023-04-24 21:20:12.202 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-04-24 21:20:12.531 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-04-24 21:20:12.550 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
-2023-04-24 21:20:12.799 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 4.353 seconds (process running for 5.107)
-2023-04-24 21:20:12.802 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
-2023-04-24 21:20:12.803 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
-2023-04-24 21:20:16.850 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-24 21:20:16.851 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-04-24 21:20:16.854 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2023-04-24 21:20:16.969 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682342416963g9t  [0;39m ------------- 开始 -------------
-2023-04-24 21:20:16.970 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682342416963g9t  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 21:20:16.970 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682342416963g9t  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 21:20:16.971 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682342416963g9t  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:20:17.026 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682342416963g9t  [0;39m 请求参数: [{"code":"8888","mobile":"13022551111"}]
-2023-04-24 21:20:17.080 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1682342416963g9t  [0;39m HikariPool-1 - Starting...
-2023-04-24 21:20:17.412 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1682342416963g9t  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c010f3
-2023-04-24 21:20:17.415 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1682342416963g9t  [0;39m HikariPool-1 - Start completed.
-2023-04-24 21:20:17.428 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682342416963g9t  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:20:17.463 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682342416963g9t  [0;39m ==> Parameters: 13022551111(String)
-2023-04-24 21:20:17.493 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682342416963g9t  [0;39m <==    Columns: id, mobile
-2023-04-24 21:20:17.493 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682342416963g9t  [0;39m <==        Row: 1650485984778915840, 13022551111
-2023-04-24 21:20:17.494 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682342416963g9t  [0;39m <==      Total: 1
-2023-04-24 21:20:17.546 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682342416963g9t  [0;39m 返回结果: {"content":{"id":1650485984778915840,"mobile":"13022551111"},"success":true}
-2023-04-24 21:20:17.547 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682342416963g9t  [0;39m ------------- 结束 耗时：584 ms -------------
-2023-04-24 21:34:53.169 ERROR c.j.t.common.controller.ControllerExceptionHandler:54   [32m                  [0;39m 校验异常：【手机号】不能为空
-2023-04-24 21:34:53.172 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'memberSendCodeReq' on field 'mobile': rejected value [null]; codes [NotBlank.memberSendCodeReq.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberSendCodeReq.mobile,mobile]; arguments []; default message [mobile]]; default message [【手机号】不能为空]]
-2023-04-24 21:35:43.070 ERROR c.j.t.common.controller.ControllerExceptionHandler:54   [32m                  [0;39m 校验异常：【手机号】不能为空
-2023-04-24 21:35:43.072 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'memberSendCodeReq' on field 'mobile': rejected value [null]; codes [NotBlank.memberSendCodeReq.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberSendCodeReq.mobile,mobile]; arguments []; default message [mobile]]; default message [【手机号】不能为空]]
-2023-04-24 21:35:47.628 ERROR c.j.t.common.controller.ControllerExceptionHandler:54   [32m                  [0;39m 校验异常：【手机号】不能为空
-2023-04-24 21:35:47.630 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'memberSendCodeReq' on field 'mobile': rejected value [null]; codes [NotBlank.memberSendCodeReq.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memberSendCodeReq.mobile,mobile]; arguments []; default message [mobile]]; default message [【手机号】不能为空]]
-2023-04-24 21:46:09.972 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2023-04-24 21:46:09.981 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2023-04-24 21:46:15.939 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-04-24 21:46:15.996 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 12972 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
-2023-04-24 21:46:15.998 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-04-24 21:46:16.061 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-24 21:46:16.061 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-04-24 21:46:16.999 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5f1ff361-79fa-31ae-b55b-acdf79e1bac9
-2023-04-24 21:46:17.761 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-04-24 21:46:17.772 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-04-24 21:46:17.773 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-04-24 21:46:17.774 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-04-24 21:46:17.841 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-04-24 21:46:17.841 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1779 ms
-2023-04-24 21:46:18.767 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-04-24 21:46:19.097 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-04-24 21:46:19.117 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
-2023-04-24 21:46:19.367 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 4.275 seconds (process running for 5.006)
-2023-04-24 21:46:19.371 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
-2023-04-24 21:46:19.372 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
-2023-04-24 21:47:04.643 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-24 21:47:04.643 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-04-24 21:47:04.644 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2023-04-24 21:47:04.786 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682344024780cu7  [0;39m ------------- 开始 -------------
-2023-04-24 21:47:04.787 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682344024780cu7  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
-2023-04-24 21:47:04.788 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682344024780cu7  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.sendCode
-2023-04-24 21:47:04.788 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682344024780cu7  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:47:04.848 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682344024780cu7  [0;39m 请求参数: [{"mobile":"13000000001"}]
-2023-04-24 21:47:04.898 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1682344024780cu7  [0;39m HikariPool-1 - Starting...
-2023-04-24 21:47:05.179 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1682344024780cu7  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d3ddaf1
-2023-04-24 21:47:05.180 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1682344024780cu7  [0;39m HikariPool-1 - Start completed.
-2023-04-24 21:47:05.189 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682344024780cu7  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:47:05.216 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682344024780cu7  [0;39m ==> Parameters: 13000000001(String)
-2023-04-24 21:47:05.238 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682344024780cu7  [0;39m <==      Total: 0
-2023-04-24 21:47:05.251 INFO  com.jiawa.train.member.service.MemberService      :57   [32m1682344024780cu7  [0;39m 手机号不存在，插入一条记录
-2023-04-24 21:47:05.281 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682344024780cu7  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
-2023-04-24 21:47:05.281 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682344024780cu7  [0;39m ==> Parameters: 1650496585068580864(Long), 13000000001(String)
-2023-04-24 21:47:05.295 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m1682344024780cu7  [0;39m <==    Updates: 1
-2023-04-24 21:47:05.296 INFO  com.jiawa.train.member.service.MemberService      :69   [32m1682344024780cu7  [0;39m 生成短信验证码：8888
-2023-04-24 21:47:05.296 INFO  com.jiawa.train.member.service.MemberService      :72   [32m1682344024780cu7  [0;39m 保存短信记录表
-2023-04-24 21:47:05.296 INFO  com.jiawa.train.member.service.MemberService      :75   [32m1682344024780cu7  [0;39m 对接短信通道
-2023-04-24 21:47:05.301 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682344024780cu7  [0;39m 返回结果: {"success":true}
-2023-04-24 21:47:05.301 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682344024780cu7  [0;39m ------------- 结束 耗时：521 ms -------------
-2023-04-24 21:47:13.982 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m16823440339829sp  [0;39m ------------- 开始 -------------
-2023-04-24 21:47:13.983 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m16823440339829sp  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
-2023-04-24 21:47:13.983 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m16823440339829sp  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.sendCode
-2023-04-24 21:47:13.983 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m16823440339829sp  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:47:13.983 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m16823440339829sp  [0;39m 请求参数: [{"mobile":"13000000000"}]
-2023-04-24 21:47:13.985 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823440339829sp  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:47:13.985 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823440339829sp  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 21:47:13.987 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823440339829sp  [0;39m <==      Total: 0
-2023-04-24 21:47:13.988 INFO  com.jiawa.train.member.service.MemberService      :57   [32m16823440339829sp  [0;39m 手机号不存在，插入一条记录
-2023-04-24 21:47:13.989 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m16823440339829sp  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
-2023-04-24 21:47:13.989 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m16823440339829sp  [0;39m ==> Parameters: 1650496621592580096(Long), 13000000000(String)
-2023-04-24 21:47:13.999 DEBUG com.jiawa.train.member.mapper.MemberMapper.insert :137  [32m16823440339829sp  [0;39m <==    Updates: 1
-2023-04-24 21:47:14.000 INFO  com.jiawa.train.member.service.MemberService      :69   [32m16823440339829sp  [0;39m 生成短信验证码：8888
-2023-04-24 21:47:14.000 INFO  com.jiawa.train.member.service.MemberService      :72   [32m16823440339829sp  [0;39m 保存短信记录表
-2023-04-24 21:47:14.000 INFO  com.jiawa.train.member.service.MemberService      :75   [32m16823440339829sp  [0;39m 对接短信通道
-2023-04-24 21:47:14.000 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m16823440339829sp  [0;39m 返回结果: {"success":true}
-2023-04-24 21:47:14.000 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m16823440339829sp  [0;39m ------------- 结束 耗时：18 ms -------------
-2023-04-24 21:51:24.597 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2023-04-24 21:51:24.606 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2023-04-24 21:51:31.118 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-04-24 21:51:31.179 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 3560 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
-2023-04-24 21:51:31.181 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-04-24 21:51:31.250 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-24 21:51:31.251 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-04-24 21:51:32.218 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5f1ff361-79fa-31ae-b55b-acdf79e1bac9
-2023-04-24 21:51:33.057 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-04-24 21:51:33.067 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-04-24 21:51:33.068 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-04-24 21:51:33.069 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-04-24 21:51:33.142 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-04-24 21:51:33.146 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1890 ms
-2023-04-24 21:51:34.170 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-04-24 21:51:34.485 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-04-24 21:51:34.504 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
-2023-04-24 21:51:34.767 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 5.141 seconds (process running for 6.764)
-2023-04-24 21:51:34.771 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
-2023-04-24 21:51:34.772 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
-2023-04-24 21:53:03.473 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-24 21:53:03.474 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-04-24 21:53:03.476 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
-2023-04-24 21:53:03.646 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682344383640jqz  [0;39m ------------- 开始 -------------
-2023-04-24 21:53:03.647 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682344383640jqz  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
-2023-04-24 21:53:03.648 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682344383640jqz  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.sendCode
-2023-04-24 21:53:03.648 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682344383640jqz  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:53:03.709 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682344383640jqz  [0;39m 请求参数: [{"mobile":"13000000000"}]
-2023-04-24 21:53:03.763 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1682344383640jqz  [0;39m HikariPool-1 - Starting...
-2023-04-24 21:53:04.047 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1682344383640jqz  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b951afd
-2023-04-24 21:53:04.049 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1682344383640jqz  [0;39m HikariPool-1 - Start completed.
-2023-04-24 21:53:04.058 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682344383640jqz  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:53:04.085 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682344383640jqz  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 21:53:04.106 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682344383640jqz  [0;39m <==    Columns: id, mobile
-2023-04-24 21:53:04.106 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682344383640jqz  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 21:53:04.108 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682344383640jqz  [0;39m <==      Total: 1
-2023-04-24 21:53:04.120 INFO  com.jiawa.train.member.service.MemberService      :63   [32m1682344383640jqz  [0;39m 手机号存在，不插入记录
-2023-04-24 21:53:04.120 INFO  com.jiawa.train.member.service.MemberService      :69   [32m1682344383640jqz  [0;39m 生成短信验证码：8888
-2023-04-24 21:53:04.121 INFO  com.jiawa.train.member.service.MemberService      :72   [32m1682344383640jqz  [0;39m 保存短信记录表
-2023-04-24 21:53:04.121 INFO  com.jiawa.train.member.service.MemberService      :75   [32m1682344383640jqz  [0;39m 对接短信通道
-2023-04-24 21:53:04.124 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682344383640jqz  [0;39m 返回结果: {"success":true}
-2023-04-24 21:53:04.125 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682344383640jqz  [0;39m ------------- 结束 耗时：485 ms -------------
-2023-04-24 21:53:05.862 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682344385862bld  [0;39m ------------- 开始 -------------
-2023-04-24 21:53:05.863 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682344385862bld  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 21:53:05.863 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682344385862bld  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 21:53:05.863 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682344385862bld  [0;39m 远程地址: 127.0.0.1
-2023-04-24 21:53:05.865 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682344385862bld  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 21:53:05.866 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682344385862bld  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 21:53:05.867 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682344385862bld  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 21:53:05.868 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682344385862bld  [0;39m <==    Columns: id, mobile
-2023-04-24 21:53:05.868 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682344385862bld  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 21:53:05.869 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682344385862bld  [0;39m <==      Total: 1
-2023-04-24 21:53:05.910 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682344385862bld  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 21:53:05.910 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682344385862bld  [0;39m ------------- 结束 耗时：48 ms -------------
-2023-04-24 23:01:58.873 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348518873ud9  [0;39m ------------- 开始 -------------
-2023-04-24 23:01:58.874 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348518873ud9  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:01:58.874 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348518873ud9  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:01:58.875 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348518873ud9  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:01:58.875 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348518873ud9  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:01:58.877 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348518873ud9  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:01:58.877 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348518873ud9  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:01:58.878 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348518873ud9  [0;39m <==    Columns: id, mobile
-2023-04-24 23:01:58.879 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348518873ud9  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:01:58.879 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348518873ud9  [0;39m <==      Total: 1
-2023-04-24 23:01:58.879 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348518873ud9  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:01:58.879 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348518873ud9  [0;39m ------------- 结束 耗时：6 ms -------------
-2023-04-24 23:02:01.097 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m16823485210970u5  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:01.097 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m16823485210970u5  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:01.098 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m16823485210970u5  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:01.098 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m16823485210970u5  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:01.098 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m16823485210970u5  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:01.099 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823485210970u5  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:01.100 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823485210970u5  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:01.101 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m16823485210970u5  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:01.102 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m16823485210970u5  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:01.103 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823485210970u5  [0;39m <==      Total: 1
-2023-04-24 23:02:01.104 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m16823485210970u5  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:01.104 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m16823485210970u5  [0;39m ------------- 结束 耗时：7 ms -------------
-2023-04-24 23:02:06.632 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m168234852663269i  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:06.632 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m168234852663269i  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
-2023-04-24 23:02:06.632 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m168234852663269i  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.sendCode
-2023-04-24 23:02:06.633 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m168234852663269i  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:06.633 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m168234852663269i  [0;39m 请求参数: [{"mobile":"13000000000"}]
-2023-04-24 23:02:06.635 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168234852663269i  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:06.636 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168234852663269i  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:06.638 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m168234852663269i  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:06.638 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m168234852663269i  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:06.638 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168234852663269i  [0;39m <==      Total: 1
-2023-04-24 23:02:06.639 INFO  com.jiawa.train.member.service.MemberService      :63   [32m168234852663269i  [0;39m 手机号存在，不插入记录
-2023-04-24 23:02:06.639 INFO  com.jiawa.train.member.service.MemberService      :69   [32m168234852663269i  [0;39m 生成短信验证码：8888
-2023-04-24 23:02:06.640 INFO  com.jiawa.train.member.service.MemberService      :72   [32m168234852663269i  [0;39m 保存短信记录表
-2023-04-24 23:02:06.640 INFO  com.jiawa.train.member.service.MemberService      :75   [32m168234852663269i  [0;39m 对接短信通道
-2023-04-24 23:02:06.640 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m168234852663269i  [0;39m 返回结果: {"success":true}
-2023-04-24 23:02:06.640 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m168234852663269i  [0;39m ------------- 结束 耗时：8 ms -------------
-2023-04-24 23:02:07.215 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m168234852721519a  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:07.216 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m168234852721519a  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:07.216 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m168234852721519a  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:07.216 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m168234852721519a  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:07.217 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m168234852721519a  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:07.219 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168234852721519a  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:07.220 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168234852721519a  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:07.221 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m168234852721519a  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:07.222 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m168234852721519a  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:07.223 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168234852721519a  [0;39m <==      Total: 1
-2023-04-24 23:02:07.224 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m168234852721519a  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:07.224 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m168234852721519a  [0;39m ------------- 结束 耗时：9 ms -------------
-2023-04-24 23:02:08.129 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348528129am5  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:08.129 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348528129am5  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:08.130 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348528129am5  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:08.130 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348528129am5  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:08.131 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348528129am5  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:08.132 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348528129am5  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:08.133 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348528129am5  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:08.135 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348528129am5  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:08.136 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348528129am5  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:08.136 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348528129am5  [0;39m <==      Total: 1
-2023-04-24 23:02:08.137 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348528129am5  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:08.137 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348528129am5  [0;39m ------------- 结束 耗时：8 ms -------------
-2023-04-24 23:02:08.935 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348528935be8  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:08.935 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348528935be8  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:08.937 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348528935be8  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:08.937 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348528935be8  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:08.938 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348528935be8  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:08.939 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348528935be8  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:08.940 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348528935be8  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:08.941 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348528935be8  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:08.942 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348528935be8  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:08.943 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348528935be8  [0;39m <==      Total: 1
-2023-04-24 23:02:08.944 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348528935be8  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:08.945 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348528935be8  [0;39m ------------- 结束 耗时：10 ms -------------
-2023-04-24 23:02:09.409 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348529409pau  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:09.410 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348529409pau  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:09.410 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348529409pau  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:09.410 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348529409pau  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:09.411 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348529409pau  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:09.412 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529409pau  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:09.413 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529409pau  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:09.414 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348529409pau  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:09.415 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348529409pau  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:09.415 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529409pau  [0;39m <==      Total: 1
-2023-04-24 23:02:09.415 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348529409pau  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:09.415 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348529409pau  [0;39m ------------- 结束 耗时：6 ms -------------
-2023-04-24 23:02:09.584 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348529584vjy  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:09.585 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348529584vjy  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:09.585 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348529584vjy  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:09.586 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348529584vjy  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:09.586 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348529584vjy  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:09.588 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529584vjy  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:09.589 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529584vjy  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:09.591 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348529584vjy  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:09.591 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348529584vjy  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:09.592 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529584vjy  [0;39m <==      Total: 1
-2023-04-24 23:02:09.592 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348529584vjy  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:09.593 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348529584vjy  [0;39m ------------- 结束 耗时：9 ms -------------
-2023-04-24 23:02:09.755 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348529755545  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:09.755 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348529755545  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:09.755 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348529755545  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:09.756 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348529755545  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:09.756 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348529755545  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:09.757 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529755545  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:09.757 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529755545  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:09.758 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348529755545  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:09.759 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348529755545  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:09.759 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529755545  [0;39m <==      Total: 1
-2023-04-24 23:02:09.760 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348529755545  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:09.760 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348529755545  [0;39m ------------- 结束 耗时：5 ms -------------
-2023-04-24 23:02:09.915 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348529915ydi  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:09.916 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348529915ydi  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:09.916 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348529915ydi  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:09.917 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348529915ydi  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:09.917 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348529915ydi  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:09.918 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529915ydi  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:09.919 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529915ydi  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:09.921 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348529915ydi  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:09.921 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348529915ydi  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:09.922 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348529915ydi  [0;39m <==      Total: 1
-2023-04-24 23:02:09.923 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348529915ydi  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:09.923 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348529915ydi  [0;39m ------------- 结束 耗时：8 ms -------------
-2023-04-24 23:02:10.072 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m16823485300725n4  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:10.073 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m16823485300725n4  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:10.073 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m16823485300725n4  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:10.074 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m16823485300725n4  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:10.075 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m16823485300725n4  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:10.076 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823485300725n4  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:10.077 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823485300725n4  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:10.078 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m16823485300725n4  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:10.079 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m16823485300725n4  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:10.080 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16823485300725n4  [0;39m <==      Total: 1
-2023-04-24 23:02:10.081 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m16823485300725n4  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:10.081 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m16823485300725n4  [0;39m ------------- 结束 耗时：9 ms -------------
-2023-04-24 23:02:10.230 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348530230vqs  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:10.230 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348530230vqs  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:10.230 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348530230vqs  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:10.231 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348530230vqs  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:10.231 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348530230vqs  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:10.232 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530230vqs  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:10.233 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530230vqs  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:10.235 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348530230vqs  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:10.236 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348530230vqs  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:10.237 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530230vqs  [0;39m <==      Total: 1
-2023-04-24 23:02:10.237 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348530230vqs  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:10.237 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348530230vqs  [0;39m ------------- 结束 耗时：7 ms -------------
-2023-04-24 23:02:10.374 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m168234853037405w  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:10.375 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m168234853037405w  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:10.375 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m168234853037405w  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:10.375 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m168234853037405w  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:10.376 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m168234853037405w  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:10.377 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168234853037405w  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:10.378 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168234853037405w  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:10.379 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m168234853037405w  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:10.380 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m168234853037405w  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:10.380 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m168234853037405w  [0;39m <==      Total: 1
-2023-04-24 23:02:10.381 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m168234853037405w  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:10.381 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m168234853037405w  [0;39m ------------- 结束 耗时：7 ms -------------
-2023-04-24 23:02:10.511 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348530511glp  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:10.511 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348530511glp  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:10.512 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348530511glp  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:10.512 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348530511glp  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:10.512 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348530511glp  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:10.517 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530511glp  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:10.519 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530511glp  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:10.521 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348530511glp  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:10.522 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348530511glp  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:10.524 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530511glp  [0;39m <==      Total: 1
-2023-04-24 23:02:10.525 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348530511glp  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:10.526 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348530511glp  [0;39m ------------- 结束 耗时：15 ms -------------
-2023-04-24 23:02:10.675 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348530675loq  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:10.676 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348530675loq  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:10.676 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348530675loq  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:10.676 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348530675loq  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:10.676 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348530675loq  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:10.677 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530675loq  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:10.678 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530675loq  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:10.679 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348530675loq  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:10.679 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348530675loq  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:10.680 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530675loq  [0;39m <==      Total: 1
-2023-04-24 23:02:10.681 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348530675loq  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:10.681 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348530675loq  [0;39m ------------- 结束 耗时：6 ms -------------
-2023-04-24 23:02:10.826 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348530826hvo  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:10.827 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348530826hvo  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:10.827 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348530826hvo  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:10.827 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348530826hvo  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:10.827 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348530826hvo  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:10.828 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530826hvo  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:10.829 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530826hvo  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:10.830 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348530826hvo  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:10.831 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348530826hvo  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:10.831 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530826hvo  [0;39m <==      Total: 1
-2023-04-24 23:02:10.833 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348530826hvo  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:10.833 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348530826hvo  [0;39m ------------- 结束 耗时：7 ms -------------
-2023-04-24 23:02:10.977 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348530977w0p  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:10.977 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348530977w0p  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:10.977 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348530977w0p  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:10.977 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348530977w0p  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:10.978 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348530977w0p  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:10.979 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530977w0p  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:10.980 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530977w0p  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:10.982 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348530977w0p  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:10.982 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348530977w0p  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:10.983 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348530977w0p  [0;39m <==      Total: 1
-2023-04-24 23:02:10.984 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348530977w0p  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:10.985 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348530977w0p  [0;39m ------------- 结束 耗时：8 ms -------------
-2023-04-24 23:02:11.139 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348531139g6o  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:11.139 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348531139g6o  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:11.139 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348531139g6o  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:11.139 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348531139g6o  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:11.139 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348531139g6o  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:11.140 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531139g6o  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:11.140 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531139g6o  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:11.142 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348531139g6o  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:11.142 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348531139g6o  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:11.142 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531139g6o  [0;39m <==      Total: 1
-2023-04-24 23:02:11.144 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348531139g6o  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:11.144 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348531139g6o  [0;39m ------------- 结束 耗时：5 ms -------------
-2023-04-24 23:02:11.302 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348531302tx8  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:11.302 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348531302tx8  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:11.302 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348531302tx8  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:11.303 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348531302tx8  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:11.303 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348531302tx8  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:11.304 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531302tx8  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:11.305 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531302tx8  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:11.306 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348531302tx8  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:11.307 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348531302tx8  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:11.308 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531302tx8  [0;39m <==      Total: 1
-2023-04-24 23:02:11.309 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348531302tx8  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:11.309 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348531302tx8  [0;39m ------------- 结束 耗时：7 ms -------------
-2023-04-24 23:02:11.455 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348531455nji  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:11.455 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348531455nji  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:11.455 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348531455nji  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:11.456 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348531455nji  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:11.456 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348531455nji  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:11.457 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531455nji  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:11.457 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531455nji  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:11.458 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348531455nji  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:11.459 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348531455nji  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:11.460 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531455nji  [0;39m <==      Total: 1
-2023-04-24 23:02:11.460 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348531455nji  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:11.460 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348531455nji  [0;39m ------------- 结束 耗时：6 ms -------------
-2023-04-24 23:02:11.610 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348531610fxx  [0;39m ------------- 开始 -------------
-2023-04-24 23:02:11.611 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348531610fxx  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:02:11.611 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348531610fxx  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:02:11.611 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348531610fxx  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:02:11.611 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348531610fxx  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:02:11.612 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531610fxx  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:02:11.612 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531610fxx  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:02:11.613 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348531610fxx  [0;39m <==    Columns: id, mobile
-2023-04-24 23:02:11.614 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348531610fxx  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:02:11.614 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348531610fxx  [0;39m <==      Total: 1
-2023-04-24 23:02:11.614 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348531610fxx  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:02:11.614 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348531610fxx  [0;39m ------------- 结束 耗时：4 ms -------------
-2023-04-24 23:08:24.358 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348904358xka  [0;39m ------------- 开始 -------------
-2023-04-24 23:08:24.359 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348904358xka  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
-2023-04-24 23:08:24.359 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348904358xka  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.sendCode
-2023-04-24 23:08:24.360 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348904358xka  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:08:24.360 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348904358xka  [0;39m 请求参数: [{"mobile":"13000000000"}]
-2023-04-24 23:08:24.362 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348904358xka  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:08:24.363 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348904358xka  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:08:24.364 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348904358xka  [0;39m <==    Columns: id, mobile
-2023-04-24 23:08:24.364 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348904358xka  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:08:24.365 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348904358xka  [0;39m <==      Total: 1
-2023-04-24 23:08:24.365 INFO  com.jiawa.train.member.service.MemberService      :63   [32m1682348904358xka  [0;39m 手机号存在，不插入记录
-2023-04-24 23:08:24.366 INFO  com.jiawa.train.member.service.MemberService      :69   [32m1682348904358xka  [0;39m 生成短信验证码：8888
-2023-04-24 23:08:24.366 INFO  com.jiawa.train.member.service.MemberService      :72   [32m1682348904358xka  [0;39m 保存短信记录表
-2023-04-24 23:08:24.366 INFO  com.jiawa.train.member.service.MemberService      :75   [32m1682348904358xka  [0;39m 对接短信通道
-2023-04-24 23:08:24.366 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348904358xka  [0;39m 返回结果: {"success":true}
-2023-04-24 23:08:24.366 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348904358xka  [0;39m ------------- 结束 耗时：8 ms -------------
-2023-04-24 23:08:25.568 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348905568s4k  [0;39m ------------- 开始 -------------
-2023-04-24 23:08:25.568 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348905568s4k  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:08:25.568 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348905568s4k  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:08:25.568 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348905568s4k  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:08:25.569 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348905568s4k  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:08:25.570 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348905568s4k  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:08:25.571 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348905568s4k  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:08:25.572 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348905568s4k  [0;39m <==    Columns: id, mobile
-2023-04-24 23:08:25.572 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348905568s4k  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:08:25.573 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348905568s4k  [0;39m <==      Total: 1
-2023-04-24 23:08:25.573 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348905568s4k  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:08:25.573 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348905568s4k  [0;39m ------------- 结束 耗时：5 ms -------------
-2023-04-24 23:08:26.158 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682348906158p4j  [0;39m ------------- 开始 -------------
-2023-04-24 23:08:26.159 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682348906158p4j  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
-2023-04-24 23:08:26.159 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682348906158p4j  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
-2023-04-24 23:08:26.159 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682348906158p4j  [0;39m 远程地址: 127.0.0.1
-2023-04-24 23:08:26.160 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682348906158p4j  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
-2023-04-24 23:08:26.161 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348906158p4j  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
-2023-04-24 23:08:26.162 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348906158p4j  [0;39m ==> Parameters: 13000000000(String)
-2023-04-24 23:08:26.163 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348906158p4j  [0;39m <==    Columns: id, mobile
-2023-04-24 23:08:26.164 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682348906158p4j  [0;39m <==        Row: 1650496621592580096, 13000000000
-2023-04-24 23:08:26.164 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682348906158p4j  [0;39m <==      Total: 1
-2023-04-24 23:08:26.164 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682348906158p4j  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000"},"success":true}
-2023-04-24 23:08:26.165 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682348906158p4j  [0;39m ------------- 结束 耗时：7 ms -------------
+2023-04-27 22:25:36.866 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-04-27 22:25:36.946 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 3452 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
+2023-04-27 22:25:36.948 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-27 22:25:37.032 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-27 22:25:37.033 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-27 22:25:38.253 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5f1ff361-79fa-31ae-b55b-acdf79e1bac9
+2023-04-27 22:25:39.096 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-04-27 22:25:39.114 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:25:39.116 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-27 22:25:39.117 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-04-27 22:25:39.187 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-27 22:25:39.188 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2153 ms
+2023-04-27 22:25:40.284 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-27 22:25:40.639 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:25:40.665 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-04-27 22:25:40.948 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 5.282 seconds (process running for 6.383)
+2023-04-27 22:25:40.952 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
+2023-04-27 22:25:40.954 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-04-27 22:26:17.430 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-27 22:26:17.431 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-27 22:26:17.432 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-04-27 22:26:17.586 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682605577579ow7  [0;39m ------------- 开始 -------------
+2023-04-27 22:26:17.586 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682605577579ow7  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-04-27 22:26:17.587 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682605577579ow7  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
+2023-04-27 22:26:17.587 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682605577579ow7  [0;39m 远程地址: 127.0.0.1
+2023-04-27 22:26:17.646 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682605577579ow7  [0;39m 请求参数: [{"code":"8888","mobile":"13000000001"}]
+2023-04-27 22:26:17.693 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1682605577579ow7  [0;39m HikariPool-1 - Starting...
+2023-04-27 22:26:18.099 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1682605577579ow7  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46b3d6c1
+2023-04-27 22:26:18.101 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1682605577579ow7  [0;39m HikariPool-1 - Start completed.
+2023-04-27 22:26:18.111 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682605577579ow7  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-04-27 22:26:18.140 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682605577579ow7  [0;39m ==> Parameters: 13000000001(String)
+2023-04-27 22:26:18.179 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682605577579ow7  [0;39m <==    Columns: id, mobile
+2023-04-27 22:26:18.180 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682605577579ow7  [0;39m <==        Row: 1650496585068580864, 13000000001
+2023-04-27 22:26:18.183 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682605577579ow7  [0;39m <==      Total: 1
+2023-04-27 22:26:18.903 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682605577579ow7  [0;39m 返回结果: {"content":{"id":1650496585068580864,"mobile":"13000000001"},"success":true}
+2023-04-27 22:26:18.903 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682605577579ow7  [0;39m ------------- 结束 耗时：1324 ms -------------
+2023-04-27 22:26:42.902 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-27 22:26:42.910 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-04-27 22:26:50.128 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-04-27 22:26:50.182 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 2300 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
+2023-04-27 22:26:50.184 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-27 22:26:50.244 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-27 22:26:50.245 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-27 22:26:51.320 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5f1ff361-79fa-31ae-b55b-acdf79e1bac9
+2023-04-27 22:26:52.253 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-04-27 22:26:52.266 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:26:52.267 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-27 22:26:52.267 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-04-27 22:26:52.344 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-27 22:26:52.345 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2100 ms
+2023-04-27 22:26:53.522 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-27 22:26:53.886 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:26:53.915 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-04-27 22:26:54.216 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 5.014 seconds (process running for 7.133)
+2023-04-27 22:26:54.225 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
+2023-04-27 22:26:54.227 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-04-27 22:26:59.042 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-27 22:26:59.114 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:26:59.115 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-27 22:26:59.125 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:26:59.128 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:26:59.577 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 2300 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
+2023-04-27 22:26:59.578 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-27 22:26:59.938 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5f1ff361-79fa-31ae-b55b-acdf79e1bac9
+2023-04-27 22:27:00.073 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-04-27 22:27:00.074 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:27:00.075 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-27 22:27:00.075 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-04-27 22:27:00.092 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-27 22:27:00.092 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 510 ms
+2023-04-27 22:27:00.689 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-27 22:27:01.050 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:27:01.055 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-04-27 22:27:01.362 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 2.151 seconds (process running for 14.279)
+2023-04-27 22:27:01.364 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-04-27 22:27:01.365 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
+2023-04-27 22:27:01.365 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-04-27 22:27:02.104 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-27 22:27:02.145 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:27:02.145 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-27 22:27:02.148 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:27:02.149 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:27:02.479 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 2300 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
+2023-04-27 22:27:02.480 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-27 22:27:02.782 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5f1ff361-79fa-31ae-b55b-acdf79e1bac9
+2023-04-27 22:27:02.907 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-04-27 22:27:02.908 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:27:02.908 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-27 22:27:02.909 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-04-27 22:27:02.924 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-27 22:27:02.925 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 442 ms
+2023-04-27 22:27:03.366 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-27 22:27:03.670 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-04-27 22:27:03.675 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-04-27 22:27:03.933 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 1.731 seconds (process running for 16.85)
+2023-04-27 22:27:03.935 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-04-27 22:27:03.935 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
+2023-04-27 22:27:03.935 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-04-27 22:27:08.463 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-27 22:27:08.463 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-27 22:27:08.465 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2023-04-27 22:27:08.663 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1682605628656bnw  [0;39m ------------- 开始 -------------
+2023-04-27 22:27:08.665 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1682605628656bnw  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-04-27 22:27:08.665 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1682605628656bnw  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
+2023-04-27 22:27:08.666 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1682605628656bnw  [0;39m 远程地址: 127.0.0.1
+2023-04-27 22:27:08.743 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1682605628656bnw  [0;39m 请求参数: [{"code":"8888","mobile":"13000000001"}]
+2023-04-27 22:27:08.806 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1682605628656bnw  [0;39m HikariPool-1 - Starting...
+2023-04-27 22:27:09.138 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1682605628656bnw  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@120b8157
+2023-04-27 22:27:09.141 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1682605628656bnw  [0;39m HikariPool-1 - Start completed.
+2023-04-27 22:27:09.153 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682605628656bnw  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-04-27 22:27:09.187 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682605628656bnw  [0;39m ==> Parameters: 13000000001(String)
+2023-04-27 22:27:09.213 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682605628656bnw  [0;39m <==    Columns: id, mobile
+2023-04-27 22:27:09.213 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1682605628656bnw  [0;39m <==        Row: 1650496585068580864, 13000000001
+2023-04-27 22:27:09.215 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1682605628656bnw  [0;39m <==      Total: 1
+2023-04-27 22:27:12.649 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1682605628656bnw  [0;39m 返回结果: {"content":{"id":1650496585068580864,"mobile":"13000000001","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTY1MDQ5NjU4NTA2ODU4MDg2NCwibW9iaWxlIjoiMTMwMDAwMDAwMDEifQ.SxS8Zxlcc9y45t563oh_4DbYeCeRez-Fg83ffdfVJwA"},"success":true}
+2023-04-27 22:27:12.650 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1682605628656bnw  [0;39m ------------- 结束 耗时：3994 ms -------------
