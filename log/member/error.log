@@ -114,3 +114,4 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: com.jiawa.train.
 	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
 	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
 	... 83 common frames omitted
+2023-05-18 22:22:40.710 ERROR c.j.t.common.controller.ControllerExceptionHandler:54   [32m                  [0;39m 校验异常：【会员ID】不能为空

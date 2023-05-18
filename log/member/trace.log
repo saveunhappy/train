@@ -346,3 +346,49 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: com.jiawa.train.
 2023-05-18 22:19:02.953 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1684419542414lpq  [0;39m ------------- 结束 耗时：539 ms -------------
 2023-05-18 22:22:13.003 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
 2023-05-18 22:22:13.012 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-05-18 22:22:19.490 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-05-18 22:22:19.533 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 5404 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
+2023-05-18 22:22:19.535 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 22:22:19.598 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-18 22:22:19.599 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-18 22:22:20.450 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=6b7d76a8-bab6-3408-9e36-1accc192824c
+2023-05-18 22:22:21.206 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-05-18 22:22:21.216 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-05-18 22:22:21.217 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-18 22:22:21.219 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-05-18 22:22:21.289 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-18 22:22:21.289 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1690 ms
+2023-05-18 22:22:22.233 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-05-18 22:22:22.560 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-05-18 22:22:22.585 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-05-18 22:22:22.836 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 4.259 seconds (process running for 4.99)
+2023-05-18 22:22:22.841 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
+2023-05-18 22:22:22.842 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-05-18 22:22:40.552 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-18 22:22:40.552 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-18 22:22:40.554 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-05-18 22:22:40.710 ERROR c.j.t.common.controller.ControllerExceptionHandler:54   [32m                  [0;39m 校验异常：【会员ID】不能为空
+2023-05-18 22:22:40.733 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.jiawa.train.common.resp.CommonResp<java.lang.Object> com.jiawa.train.member.controller.PassengerController.save(com.jiawa.train.member.req.PassengerSaveReq): [Field error in object 'passengerSaveReq' on field 'memberId': rejected value [null]; codes [NotNull.passengerSaveReq.memberId,NotNull.memberId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [passengerSaveReq.memberId,memberId]; arguments []; default message [memberId]]; default message [【会员ID】不能为空]] ]
+2023-05-18 22:22:44.225 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m1684419764220z3o  [0;39m ------------- 开始 -------------
+2023-05-18 22:22:44.226 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m1684419764220z3o  [0;39m 请求地址: http://localhost:8001/member/passenger/save POST
+2023-05-18 22:22:44.226 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m1684419764220z3o  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.save
+2023-05-18 22:22:44.227 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m1684419764220z3o  [0;39m 远程地址: 127.0.0.1
+2023-05-18 22:22:44.306 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m1684419764220z3o  [0;39m 请求参数: [{"idCard":"123321","memberId":1,"name":"test","type":"1"}]
+2023-05-18 22:22:44.388 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1684419764220z3o  [0;39m HikariPool-1 - Starting...
+2023-05-18 22:22:44.670 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1684419764220z3o  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7daadb28
+2023-05-18 22:22:44.672 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1684419764220z3o  [0;39m HikariPool-1 - Start completed.
+2023-05-18 22:22:44.686 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m1684419764220z3o  [0;39m ==>  Preparing: insert into passenger (id, member_id, `name`, id_card, `type`, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?)
+2023-05-18 22:22:44.725 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m1684419764220z3o  [0;39m ==> Parameters: 1659202865811558400(Long), 1(Long), test(String), 123321(String), 1(String), 2023-05-18 22:22:44.308(Timestamp), 2023-05-18 22:22:44.308(Timestamp)
+2023-05-18 22:22:44.739 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m1684419764220z3o  [0;39m <==    Updates: 1
+2023-05-18 22:22:44.746 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m1684419764220z3o  [0;39m 返回结果: {"success":true}
+2023-05-18 22:22:44.746 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m1684419764220z3o  [0;39m ------------- 结束 耗时：526 ms -------------
+2023-05-18 22:22:50.919 INFO  com.jiawa.train.common.aspect.LogAspect           :53   [32m16844197709194hg  [0;39m ------------- 开始 -------------
+2023-05-18 22:22:50.920 INFO  com.jiawa.train.common.aspect.LogAspect           :54   [32m16844197709194hg  [0;39m 请求地址: http://localhost:8001/member/passenger/save POST
+2023-05-18 22:22:50.920 INFO  com.jiawa.train.common.aspect.LogAspect           :55   [32m16844197709194hg  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.save
+2023-05-18 22:22:50.920 INFO  com.jiawa.train.common.aspect.LogAspect           :56   [32m16844197709194hg  [0;39m 远程地址: 127.0.0.1
+2023-05-18 22:22:50.921 INFO  com.jiawa.train.common.aspect.LogAspect           :77   [32m16844197709194hg  [0;39m 请求参数: [{"idCard":"123321","memberId":1,"name":"test","type":"1"}]
+2023-05-18 22:22:50.922 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m16844197709194hg  [0;39m ==>  Preparing: insert into passenger (id, member_id, `name`, id_card, `type`, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?)
+2023-05-18 22:22:50.924 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m16844197709194hg  [0;39m ==> Parameters: 1659202893313609728(Long), 1(Long), test(String), 123321(String), 1(String), 2023-05-18 22:22:50.921(Timestamp), 2023-05-18 22:22:50.921(Timestamp)
+2023-05-18 22:22:50.932 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m16844197709194hg  [0;39m <==    Updates: 1
+2023-05-18 22:22:50.933 INFO  com.jiawa.train.common.aspect.LogAspect           :89   [32m16844197709194hg  [0;39m 返回结果: {"success":true}
+2023-05-18 22:22:50.933 INFO  com.jiawa.train.common.aspect.LogAspect           :90   [32m16844197709194hg  [0;39m ------------- 结束 耗时：14 ms -------------
