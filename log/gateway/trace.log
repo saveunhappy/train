@@ -576,3 +576,35 @@ cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.
 2023-05-18 22:48:16.071 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
 2023-05-18 22:48:16.072 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
 2023-05-18 22:48:16.098 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [18/5月/2023:22:48:16 +0800] "POST /member/passenger/save HTTP/1.1" 200 46 29
+2023-05-18 23:31:57.611 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-05-18 23:31:57.662 INFO  com.jiawa.train.gateway.config.GateWayApplication :51   [32m                  [0;39m Starting GateWayApplication using Java 17.0.6 with PID 10004 (D:\devCode\train\gateway\target\classes started by HJT in D:\devCode\train)
+2023-05-18 23:31:57.663 INFO  com.jiawa.train.gateway.config.GateWayApplication :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-18 23:31:57.726 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-18 23:31:57.727 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-18 23:31:58.547 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=961707ab-26f4-3ad8-8cb2-0e5c15368f0a
+2023-05-18 23:31:59.665 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-05-18 23:31:59.666 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-05-18 23:31:59.666 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-05-18 23:31:59.666 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-05-18 23:31:59.667 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-05-18 23:31:59.667 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-05-18 23:31:59.667 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-05-18 23:31:59.667 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-05-18 23:31:59.667 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-05-18 23:31:59.667 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-05-18 23:31:59.668 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-05-18 23:31:59.668 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-05-18 23:31:59.668 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-05-18 23:31:59.668 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-05-18 23:31:59.983 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-05-18 23:32:00.658 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-05-18 23:32:01.391 INFO  com.jiawa.train.gateway.config.GateWayApplication :57   [32m                  [0;39m Started GateWayApplication in 4.584 seconds (process running for 5.265)
+2023-05-18 23:32:01.396 INFO  com.jiawa.train.gateway.config.GateWayApplication :17   [32m                  [0;39m 启动成功！！
+2023-05-18 23:32:01.397 INFO  com.jiawa.train.gateway.config.GateWayApplication :18   [32m                  [0;39m 网关地址: 	http://127.0.0.1:8000
+2023-05-18 23:32:59.366 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-05-18 23:33:00.878 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [18/5月/2023:23:32:59 +0800] "POST /member/member/login HTTP/1.1" 200 317 1569
+2023-05-18 23:33:23.927 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
+2023-05-18 23:33:23.928 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ0MjM5ODAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NTA0OTY1ODUwNjg1ODA4NjQsImV4cCI6MTY4NDUxMDM4MCwiaWF0IjoxNjg0NDIzOTgwfQ.yv5ZpTtsObRUWXslWnNZaBU1S3dY2IYv6jCVVQ-Dh9k
+2023-05-18 23:33:24.652 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
+2023-05-18 23:33:24.653 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
+2023-05-18 23:33:24.722 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [18/5月/2023:23:33:23 +0800] "POST /member/passenger/save HTTP/1.1" 200 46 796
