@@ -66,3 +66,59 @@
 2023-05-22 22:28:03.687 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
 2023-05-22 22:28:03.687 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
 2023-05-22 22:28:03.720 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:22:28:03 +0800] "GET /member/passenger/query-list HTTP/1.1" 200 134 36
+2023-05-22 22:28:45.715 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-05-22 22:28:45.777 INFO  com.jiawa.train.gateway.config.GateWayApplication :51   [32m                  [0;39m Starting GateWayApplication using Java 17.0.6 with PID 9412 (D:\devCode\train\gateway\target\classes started by HJT in D:\devCode\train)
+2023-05-22 22:28:45.779 INFO  com.jiawa.train.gateway.config.GateWayApplication :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-22 22:28:45.838 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-22 22:28:45.839 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-22 22:28:46.649 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=961707ab-26f4-3ad8-8cb2-0e5c15368f0a
+2023-05-22 22:28:47.661 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-05-22 22:28:47.661 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-05-22 22:28:47.661 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-05-22 22:28:47.661 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-05-22 22:28:47.662 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-05-22 22:28:47.662 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-05-22 22:28:47.662 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-05-22 22:28:47.662 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-05-22 22:28:47.663 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-05-22 22:28:47.663 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-05-22 22:28:47.663 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-05-22 22:28:47.664 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-05-22 22:28:47.664 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-05-22 22:28:47.664 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-05-22 22:28:47.877 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-05-22 22:28:48.436 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-05-22 22:28:48.946 INFO  com.jiawa.train.gateway.config.GateWayApplication :57   [32m                  [0;39m Started GateWayApplication in 4.236 seconds (process running for 5.073)
+2023-05-22 22:28:48.951 INFO  com.jiawa.train.gateway.config.GateWayApplication :17   [32m                  [0;39m 启动成功！！
+2023-05-22 22:28:48.951 INFO  com.jiawa.train.gateway.config.GateWayApplication :18   [32m                  [0;39m 网关地址: 	http://127.0.0.1:8000
+2023-05-22 22:28:56.320 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-05-22 22:28:57.861 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:22:28:56 +0800] "POST /member/member/login HTTP/1.1" 200 317 1599
+2023-05-22 22:29:01.308 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
+2023-05-22 22:29:01.309 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ3NjU3MzcsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NTA0OTY1ODUwNjg1ODA4NjQsImV4cCI6MTY4NDg1MjEzNywiaWF0IjoxNjg0NzY1NzM3fQ.-Lr--Y_xvCYtKjSKG8vvQXExxDqBpA-Py4pHt5kEDTU
+2023-05-22 22:29:02.013 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
+2023-05-22 22:29:02.014 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
+2023-05-22 22:29:02.128 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:22:29:01 +0800] "GET /member/passenger/query-list HTTP/1.1" 200 44 821
+2023-05-22 22:49:47.414 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-05-22 22:49:47.480 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:22:49:47 +0800] "POST /member/member/login HTTP/1.1" 200 317 68
+2023-05-22 22:49:56.327 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-05-22 22:49:56.341 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:22:49:56 +0800] "POST /member/member/login HTTP/1.1" 200 317 15
+2023-05-22 22:49:58.659 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
+2023-05-22 22:49:58.660 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ3NjY5OTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NTA0OTY1ODUwNjg1ODA4NjQsImV4cCI6MTY4NDg1MzM5NiwiaWF0IjoxNjg0NzY2OTk2fQ.yk01j86ZP2s4D9EOMqHnhtgcwCK1BgTD6fa65bPzRKY
+2023-05-22 22:49:58.661 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
+2023-05-22 22:49:58.661 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
+2023-05-22 22:49:58.692 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:22:49:58 +0800] "GET /member/passenger/query-list?page=2&size=200 HTTP/1.1" 200 78 34
+2023-05-22 22:50:14.058 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
+2023-05-22 22:50:14.058 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ3NjY5OTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NTA0OTY1ODUwNjg1ODA4NjQsImV4cCI6MTY4NDg1MzM5NiwiaWF0IjoxNjg0NzY2OTk2fQ.yk01j86ZP2s4D9EOMqHnhtgcwCK1BgTD6fa65bPzRKY
+2023-05-22 22:50:14.059 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
+2023-05-22 22:50:14.059 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
+2023-05-22 22:50:14.082 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:22:50:14 +0800] "GET /member/passenger/query-list?page=2&size=100 HTTP/1.1" 200 44 25
+2023-05-22 22:50:21.021 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
+2023-05-22 22:50:21.021 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ3NjY5OTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NTA0OTY1ODUwNjg1ODA4NjQsImV4cCI6MTY4NDg1MzM5NiwiaWF0IjoxNjg0NzY2OTk2fQ.yk01j86ZP2s4D9EOMqHnhtgcwCK1BgTD6fa65bPzRKY
+2023-05-22 22:50:21.022 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
+2023-05-22 22:50:21.022 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
+2023-05-22 22:50:21.056 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:22:50:21 +0800] "GET /member/passenger/query-list?page=1&size=100 HTTP/1.1" 200 425 36
+2023-05-22 22:50:39.382 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
+2023-05-22 22:50:39.382 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ3NjY5OTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NTA0OTY1ODUwNjg1ODA4NjQsImV4cCI6MTY4NDg1MzM5NiwiaWF0IjoxNjg0NzY2OTk2fQ.yk01j86ZP2s4D9EOMqHnhtgcwCK1BgTD6fa65bPzRKY
+2023-05-22 22:50:39.383 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
+2023-05-22 22:50:39.384 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
+2023-05-22 22:50:39.406 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:22:50:39 +0800] "GET /member/passenger/query-list?page=2&size=1 HTTP/1.1" 200 234 25
