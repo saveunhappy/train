@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import store from "@/store";
 import {notification} from "ant-design-vue";
 
@@ -17,7 +17,11 @@ const routes = [
             path: 'welcome',
             component: () => import('../views/main/welcome.vue'),
         }]
-    }
+    },
+    {
+        path: '',
+        redirect: '/welcome'
+    },
 ]
 
 const router = createRouter({
@@ -36,7 +40,7 @@ router.beforeEach((to, from, next) => {
         console.log("页面登录校验开始：", _member);
         if (!_member.token) {
             console.log("用户未登录或登录超时！");
-            notification.error({description: "未登录或登录超时"});
+            notification.error({ description: "未登录或登录超时" });
             next('/login');
         } else {
             next();
