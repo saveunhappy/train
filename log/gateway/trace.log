@@ -31,3 +31,38 @@
 2023-05-22 20:14:29.089 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [22/5月/2023:20:14:29 +0800] "OPTIONS /member/member/login HTTP/1.1" 200 0 1
 2023-05-22 20:14:29.094 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/member/member/login
 2023-05-22 20:14:29.848 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [22/5月/2023:20:14:29 +0800] "POST /member/member/login HTTP/1.1" 200 317 755
+2023-05-22 20:16:30.128 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [22/5月/2023:20:16:30 +0800] "OPTIONS /member/member/send-code HTTP/1.1" 200 0 2
+2023-05-22 20:16:30.133 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
+2023-05-22 20:16:30.165 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [22/5月/2023:20:16:30 +0800] "POST /member/member/send-code HTTP/1.1" 200 46 33
+2023-05-22 20:16:30.758 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [22/5月/2023:20:16:30 +0800] "OPTIONS /member/member/login HTTP/1.1" 200 0 1
+2023-05-22 20:16:30.762 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-05-22 20:16:30.778 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [22/5月/2023:20:16:30 +0800] "POST /member/member/login HTTP/1.1" 200 317 16
+2023-05-22 20:20:01.178 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
+2023-05-22 20:20:01.191 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [22/5月/2023:20:20:01 +0800] "POST /member/member/send-code HTTP/1.1" 200 46 15
+2023-05-22 20:20:01.557 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-05-22 20:20:01.568 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [22/5月/2023:20:20:01 +0800] "POST /member/member/login HTTP/1.1" 200 317 12
+2023-05-22 20:35:02.394 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [22/5月/2023:20:35:02 +0800] "OPTIONS /member/passenger/save HTTP/1.1" 200 0 2
+2023-05-22 20:35:02.399 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
+2023-05-22 20:35:02.399 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ3NTgwMDEsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDg0NDQwMSwiaWF0IjoxNjg0NzU4MDAxfQ.ELF5YJcCFQk2zl9__Ny5Tm3E3eGMjbwuegDjtjYu5Ew
+2023-05-22 20:35:03.183 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
+2023-05-22 20:35:03.183 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
+2023-05-22 20:35:03.233 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 0:0:0:0:0:0:0:1 - - [22/5月/2023:20:35:02 +0800] "POST /member/passenger/save HTTP/1.1" 200 46 835
+2023-05-22 21:54:43.897 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-05-22 21:54:43.920 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:21:54:43 +0800] "POST /member/member/login HTTP/1.1" 200 317 24
+2023-05-22 21:55:03.473 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
+2023-05-22 21:55:03.474 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ3NjM2ODMsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NTA0OTY1ODUwNjg1ODA4NjQsImV4cCI6MTY4NDg1MDA4MywiaWF0IjoxNjg0NzYzNjgzfQ.9rwcEPvgkjN17gsGyQC7g1ZgXT6EqR1u7H0s_B2zEgo
+2023-05-22 21:55:03.475 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
+2023-05-22 21:55:03.476 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
+2023-05-22 21:55:03.515 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:21:55:03 +0800] "GET /member/passenger/query-list HTTP/1.1" 404 149 42
+2023-05-22 21:55:48.224 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-05-22 21:55:48.284 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:21:55:48 +0800] "POST /member/member/login HTTP/1.1" 200 317 61
+2023-05-22 21:55:53.290 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
+2023-05-22 21:55:53.291 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ3NjM3NDgsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NTA0OTY1ODUwNjg1ODA4NjQsImV4cCI6MTY4NDg1MDE0OCwiaWF0IjoxNjg0NzYzNzQ4fQ.V6g8uCHSrNo3Pq5dZEPLYCLG96_CtRAzJTXK4KLzPBs
+2023-05-22 21:55:53.292 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
+2023-05-22 21:55:53.292 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
+2023-05-22 21:55:53.326 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:21:55:53 +0800] "GET /member/passenger/query-list HTTP/1.1" 200 425 36
+2023-05-22 22:28:03.685 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
+2023-05-22 22:28:03.686 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ3NjM3NDgsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NTA0OTY1ODUwNjg1ODA4NjQsImV4cCI6MTY4NDg1MDE0OCwiaWF0IjoxNjg0NzYzNzQ4fQ.V6g8uCHSrNo3Pq5dZEPLYCLG96_CtRAzJTXK4KLzPBs
+2023-05-22 22:28:03.687 INFO  com.jiawa.train.gateway.util.JwtUtil              :46   [32m                  [0;39m JWT token校验结果：true
+2023-05-22 22:28:03.687 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :45   [32m                  [0;39m token有效，放行该请求
+2023-05-22 22:28:03.720 INFO  reactor.netty.http.server.AccessLog               :279  [32m                  [0;39m 127.0.0.1 - - [22/5月/2023:22:28:03 +0800] "GET /member/passenger/query-list HTTP/1.1" 200 134 36
