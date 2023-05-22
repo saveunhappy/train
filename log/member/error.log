@@ -91,3 +91,4 @@ Caused by: java.lang.ClassNotFoundException: com.github.pagehelper.PageHelper
 	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
 	... 79 common frames omitted
+2023-05-22 22:49:58.684 ERROR c.j.t.common.controller.ControllerExceptionHandler:54   [32m1684766998665di2  [0;39m 校验异常：【每页条数】不能超过100
