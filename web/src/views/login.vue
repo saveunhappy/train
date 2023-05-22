@@ -75,7 +75,7 @@ export default defineComponent({
                     notification.success({ description: '登录成功！' });
                     // 登录成功，跳到控台主页
                     store.commit("setMember",data.content);
-                    router.push("/");
+                    router.push("/welcome");
 
                 } else {
                     notification.error({ description: data.message });
