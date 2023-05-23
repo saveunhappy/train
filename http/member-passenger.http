@@ -14,8 +14,8 @@ Content-Type: application/json
 token: {{token}}
 
 {
-  "id": 1659220651065610240,
-  "memberId": 1650496585068580864,
+  "id": 1628627322414436352,
+  "memberId": 1624581077500825600,
   "name": "test1",
   "idCard": "123321",
   "type": "1"
@@ -24,6 +24,12 @@ token: {{token}}
 ###
 
 GET http://localhost:8000/member/passenger/query-list?page=1&size=10
+Accept: application/json
+token: {{token}}
+
+###
+
+DELETE http://localhost:8000/member/passenger/delete/1659201935498153984
 Accept: application/json
 token: {{token}}
 
