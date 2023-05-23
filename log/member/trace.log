@@ -17,3 +17,658 @@
 2023-05-23 20:33:33.892 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 7.112 seconds (process running for 10.58)
 2023-05-23 20:33:33.898 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
 2023-05-23 20:33:33.899 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-05-23 20:40:56.460 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-23 20:40:56.461 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-05-23 20:40:56.462 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-05-23 20:40:56.655 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684845656488e2d  [0;39m ------------- 开始 -------------
+2023-05-23 20:40:56.656 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684845656488e2d  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
+2023-05-23 20:40:56.657 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684845656488e2d  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.sendCode
+2023-05-23 20:40:56.657 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684845656488e2d  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:40:56.733 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684845656488e2d  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-05-23 20:41:00.206 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684845660205af3  [0;39m ------------- 开始 -------------
+2023-05-23 20:41:00.207 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684845660205af3  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
+2023-05-23 20:41:00.208 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684845660205af3  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.sendCode
+2023-05-23 20:41:00.209 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684845660205af3  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:41:00.210 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684845660205af3  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-05-23 20:41:00.313 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1684845656488e2d  [0;39m HikariPool-1 - Starting...
+2023-05-23 20:41:00.931 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1684845656488e2d  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e32c34c
+2023-05-23 20:41:00.937 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1684845656488e2d  [0;39m HikariPool-1 - Start completed.
+2023-05-23 20:41:00.959 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845656488e2d  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-05-23 20:41:00.979 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845660205af3  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-05-23 20:41:01.005 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845660205af3  [0;39m ==> Parameters: 13000000000(String)
+2023-05-23 20:41:01.005 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845656488e2d  [0;39m ==> Parameters: 13000000000(String)
+2023-05-23 20:41:01.057 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1684845656488e2d  [0;39m <==    Columns: id, mobile
+2023-05-23 20:41:01.057 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1684845660205af3  [0;39m <==    Columns: id, mobile
+2023-05-23 20:41:01.058 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1684845656488e2d  [0;39m <==        Row: 1650496621592580096, 13000000000
+2023-05-23 20:41:01.058 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1684845660205af3  [0;39m <==        Row: 1650496621592580096, 13000000000
+2023-05-23 20:41:01.060 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845656488e2d  [0;39m <==      Total: 1
+2023-05-23 20:41:01.060 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845660205af3  [0;39m <==      Total: 1
+2023-05-23 20:41:01.078 INFO  com.jiawa.train.member.service.MemberService      :64   [32m1684845656488e2d  [0;39m 手机号存在，不插入记录
+2023-05-23 20:41:01.078 INFO  com.jiawa.train.member.service.MemberService      :64   [32m1684845660205af3  [0;39m 手机号存在，不插入记录
+2023-05-23 20:41:06.744 INFO  com.jiawa.train.member.service.MemberService      :70   [32m1684845656488e2d  [0;39m 生成短信验证码：8888
+2023-05-23 20:41:06.744 INFO  com.jiawa.train.member.service.MemberService      :70   [32m1684845660205af3  [0;39m 生成短信验证码：8888
+2023-05-23 20:41:06.745 INFO  com.jiawa.train.member.service.MemberService      :73   [32m1684845660205af3  [0;39m 保存短信记录表
+2023-05-23 20:41:06.745 INFO  com.jiawa.train.member.service.MemberService      :73   [32m1684845656488e2d  [0;39m 保存短信记录表
+2023-05-23 20:41:06.745 INFO  com.jiawa.train.member.service.MemberService      :76   [32m1684845660205af3  [0;39m 对接短信通道
+2023-05-23 20:41:06.745 INFO  com.jiawa.train.member.service.MemberService      :76   [32m1684845656488e2d  [0;39m 对接短信通道
+2023-05-23 20:41:06.752 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684845656488e2d  [0;39m 返回结果: {"success":true}
+2023-05-23 20:41:06.752 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684845660205af3  [0;39m 返回结果: {"success":true}
+2023-05-23 20:41:06.752 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684845656488e2d  [0;39m ------------- 结束 耗时：10099 ms -------------
+2023-05-23 20:41:06.752 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684845660205af3  [0;39m ------------- 结束 耗时：6546 ms -------------
+2023-05-23 20:41:08.488 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684845668483jb1  [0;39m ------------- 开始 -------------
+2023-05-23 20:41:08.488 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684845668483jb1  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-05-23 20:41:08.489 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684845668483jb1  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
+2023-05-23 20:41:08.489 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684845668483jb1  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:41:08.491 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684845668483jb1  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
+2023-05-23 20:41:08.493 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845668483jb1  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-05-23 20:41:08.493 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845668483jb1  [0;39m ==> Parameters: 13000000000(String)
+2023-05-23 20:41:08.494 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1684845668483jb1  [0;39m <==    Columns: id, mobile
+2023-05-23 20:41:08.494 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1684845668483jb1  [0;39m <==        Row: 1650496621592580096, 13000000000
+2023-05-23 20:41:08.495 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845668483jb1  [0;39m <==      Total: 1
+2023-05-23 20:41:09.224 INFO  com.jiawa.train.common.util.JwtUtil               :37   [32m1684845668483jb1  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg
+2023-05-23 20:41:09.226 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684845668483jb1  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg"},"success":true}
+2023-05-23 20:41:09.227 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684845668483jb1  [0;39m ------------- 结束 耗时：739 ms -------------
+2023-05-23 20:41:11.239 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684845671239287  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg
+2023-05-23 20:41:11.249 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684845671239287  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:41:11.250 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684845671239287  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:41:11.269 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684845671239287  [0;39m ------------- 开始 -------------
+2023-05-23 20:41:11.269 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684845671239287  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:41:11.269 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684845671239287  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:41:11.270 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684845671239287  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:41:11.272 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684845671239287  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:41:11.275 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684845671239287  [0;39m 查询页码：1
+2023-05-23 20:41:11.275 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684845671239287  [0;39m 每页条数：2
+2023-05-23 20:41:11.369 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845671239287  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:41:11.370 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845671239287  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:41:11.379 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845671239287  [0;39m <==    Columns: count(0)
+2023-05-23 20:41:11.379 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845671239287  [0;39m <==        Row: 1
+2023-05-23 20:41:11.380 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845671239287  [0;39m <==      Total: 1
+2023-05-23 20:41:11.383 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845671239287  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:41:11.384 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845671239287  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:41:11.387 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845671239287  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:41:11.390 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845671239287  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:41:11.391 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845671239287  [0;39m <==      Total: 1
+2023-05-23 20:41:11.393 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684845671239287  [0;39m 总行数：1
+2023-05-23 20:41:11.394 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684845671239287  [0;39m 总页数：1
+2023-05-23 20:41:11.407 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684845671239287  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208}],"total":1},"success":true}
+2023-05-23 20:41:11.408 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684845671239287  [0;39m ------------- 结束 耗时：139 ms -------------
+2023-05-23 20:41:19.421 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684845679420mbc  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg
+2023-05-23 20:41:19.422 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684845679420mbc  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:41:19.422 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684845679420mbc  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:41:19.436 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684845679420mbc  [0;39m ------------- 开始 -------------
+2023-05-23 20:41:19.437 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684845679420mbc  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/save POST
+2023-05-23 20:41:19.438 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684845679420mbc  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.save
+2023-05-23 20:41:19.438 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684845679420mbc  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:41:19.442 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684845679420mbc  [0;39m 请求参数: [{"idCard":"123","name":"333","type":"2"}]
+2023-05-23 20:41:19.449 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m1684845679420mbc  [0;39m ==>  Preparing: insert into passenger (id, member_id, `name`, id_card, `type`, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?)
+2023-05-23 20:41:19.451 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m1684845679420mbc  [0;39m ==> Parameters: 1660989283152039936(Long), 1650496621592580096(Long), 333(String), 123(String), 2(String), 2023-05-23 20:41:19.442(Timestamp), 2023-05-23 20:41:19.442(Timestamp)
+2023-05-23 20:41:19.465 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m1684845679420mbc  [0;39m <==    Updates: 1
+2023-05-23 20:41:19.466 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684845679420mbc  [0;39m 返回结果: {"success":true}
+2023-05-23 20:41:19.467 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684845679420mbc  [0;39m ------------- 结束 耗时：31 ms -------------
+2023-05-23 20:41:22.579 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684845682579u3m  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg
+2023-05-23 20:41:22.580 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684845682579u3m  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:41:22.580 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684845682579u3m  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:41:22.581 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684845682579u3m  [0;39m ------------- 开始 -------------
+2023-05-23 20:41:22.581 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684845682579u3m  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:41:22.581 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684845682579u3m  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:41:22.582 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684845682579u3m  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:41:22.582 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684845682579u3m  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:41:22.583 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684845682579u3m  [0;39m 查询页码：1
+2023-05-23 20:41:22.583 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684845682579u3m  [0;39m 每页条数：2
+2023-05-23 20:41:22.592 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845682579u3m  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:41:22.593 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845682579u3m  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:41:22.595 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845682579u3m  [0;39m <==    Columns: count(0)
+2023-05-23 20:41:22.596 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845682579u3m  [0;39m <==        Row: 2
+2023-05-23 20:41:22.597 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845682579u3m  [0;39m <==      Total: 1
+2023-05-23 20:41:22.597 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845682579u3m  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:41:22.598 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845682579u3m  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:41:22.601 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845682579u3m  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:41:22.603 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845682579u3m  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:41:22.604 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845682579u3m  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:41:22.605 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845682579u3m  [0;39m <==      Total: 2
+2023-05-23 20:41:22.606 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684845682579u3m  [0;39m 总行数：2
+2023-05-23 20:41:22.606 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684845682579u3m  [0;39m 总页数：1
+2023-05-23 20:41:22.607 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684845682579u3m  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:41:22.607 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684845682579u3m  [0;39m ------------- 结束 耗时：26 ms -------------
+2023-05-23 20:42:01.548 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684845721548zk2  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg
+2023-05-23 20:42:01.549 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684845721548zk2  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:42:01.549 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684845721548zk2  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:42:01.550 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684845721548zk2  [0;39m ------------- 开始 -------------
+2023-05-23 20:42:01.551 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684845721548zk2  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:42:01.551 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684845721548zk2  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:42:01.551 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684845721548zk2  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:42:01.552 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684845721548zk2  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:42:01.552 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684845721548zk2  [0;39m 查询页码：1
+2023-05-23 20:42:01.553 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684845721548zk2  [0;39m 每页条数：2
+2023-05-23 20:42:01.560 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845721548zk2  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:42:01.561 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845721548zk2  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:42:01.563 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845721548zk2  [0;39m <==    Columns: count(0)
+2023-05-23 20:42:01.564 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845721548zk2  [0;39m <==        Row: 2
+2023-05-23 20:42:01.565 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845721548zk2  [0;39m <==      Total: 1
+2023-05-23 20:42:01.566 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845721548zk2  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:42:01.566 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845721548zk2  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:42:01.568 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845721548zk2  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:42:01.569 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845721548zk2  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:42:01.569 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845721548zk2  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:42:01.570 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845721548zk2  [0;39m <==      Total: 2
+2023-05-23 20:42:01.571 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684845721548zk2  [0;39m 总行数：2
+2023-05-23 20:42:01.571 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684845721548zk2  [0;39m 总页数：1
+2023-05-23 20:42:01.571 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684845721548zk2  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:42:01.572 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684845721548zk2  [0;39m ------------- 结束 耗时：22 ms -------------
+2023-05-23 20:42:22.245 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m16848457422459y1  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg
+2023-05-23 20:42:22.246 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m16848457422459y1  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:42:22.246 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m16848457422459y1  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:42:22.247 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m16848457422459y1  [0;39m ------------- 开始 -------------
+2023-05-23 20:42:22.248 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m16848457422459y1  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:42:22.248 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m16848457422459y1  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:42:22.249 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m16848457422459y1  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:42:22.249 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m16848457422459y1  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:42:22.249 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m16848457422459y1  [0;39m 查询页码：1
+2023-05-23 20:42:22.249 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m16848457422459y1  [0;39m 每页条数：2
+2023-05-23 20:42:22.259 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848457422459y1  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:42:22.260 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848457422459y1  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:42:22.262 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848457422459y1  [0;39m <==    Columns: count(0)
+2023-05-23 20:42:22.263 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848457422459y1  [0;39m <==        Row: 2
+2023-05-23 20:42:22.263 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848457422459y1  [0;39m <==      Total: 1
+2023-05-23 20:42:22.264 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848457422459y1  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:42:22.265 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848457422459y1  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:42:22.267 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848457422459y1  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:42:22.268 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848457422459y1  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:42:22.269 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848457422459y1  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:42:22.270 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848457422459y1  [0;39m <==      Total: 2
+2023-05-23 20:42:22.271 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m16848457422459y1  [0;39m 总行数：2
+2023-05-23 20:42:22.271 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m16848457422459y1  [0;39m 总页数：1
+2023-05-23 20:42:22.272 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m16848457422459y1  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:42:22.272 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m16848457422459y1  [0;39m ------------- 结束 耗时：25 ms -------------
+2023-05-23 20:42:27.539 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684845747539nqq  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg
+2023-05-23 20:42:27.540 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684845747539nqq  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:42:27.540 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684845747539nqq  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:42:27.541 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684845747539nqq  [0;39m ------------- 开始 -------------
+2023-05-23 20:42:27.542 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684845747539nqq  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:42:27.542 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684845747539nqq  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:42:27.542 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684845747539nqq  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:42:27.542 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684845747539nqq  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:42:27.542 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684845747539nqq  [0;39m 查询页码：1
+2023-05-23 20:42:27.543 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684845747539nqq  [0;39m 每页条数：2
+2023-05-23 20:42:27.552 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845747539nqq  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:42:27.553 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845747539nqq  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:42:27.554 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845747539nqq  [0;39m <==    Columns: count(0)
+2023-05-23 20:42:27.555 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845747539nqq  [0;39m <==        Row: 2
+2023-05-23 20:42:27.555 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845747539nqq  [0;39m <==      Total: 1
+2023-05-23 20:42:27.556 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845747539nqq  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:42:27.556 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845747539nqq  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:42:27.557 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845747539nqq  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:42:27.558 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845747539nqq  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:42:27.560 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845747539nqq  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:42:27.561 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845747539nqq  [0;39m <==      Total: 2
+2023-05-23 20:42:27.562 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684845747539nqq  [0;39m 总行数：2
+2023-05-23 20:42:27.562 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684845747539nqq  [0;39m 总页数：1
+2023-05-23 20:42:27.563 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684845747539nqq  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:42:27.563 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684845747539nqq  [0;39m ------------- 结束 耗时：22 ms -------------
+2023-05-23 20:43:50.395 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m16848458303939k1  [0;39m ------------- 开始 -------------
+2023-05-23 20:43:50.396 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m16848458303939k1  [0;39m 请求地址: http://127.0.0.1:8001/member/member/send-code POST
+2023-05-23 20:43:50.396 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m16848458303939k1  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.sendCode
+2023-05-23 20:43:50.396 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m16848458303939k1  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:43:50.396 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m16848458303939k1  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-05-23 20:43:50.398 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16848458303939k1  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-05-23 20:43:50.399 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16848458303939k1  [0;39m ==> Parameters: 13000000000(String)
+2023-05-23 20:43:50.400 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m16848458303939k1  [0;39m <==    Columns: id, mobile
+2023-05-23 20:43:50.400 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m16848458303939k1  [0;39m <==        Row: 1650496621592580096, 13000000000
+2023-05-23 20:43:50.401 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m16848458303939k1  [0;39m <==      Total: 1
+2023-05-23 20:43:50.401 INFO  com.jiawa.train.member.service.MemberService      :64   [32m16848458303939k1  [0;39m 手机号存在，不插入记录
+2023-05-23 20:43:50.401 INFO  com.jiawa.train.member.service.MemberService      :70   [32m16848458303939k1  [0;39m 生成短信验证码：8888
+2023-05-23 20:43:50.401 INFO  com.jiawa.train.member.service.MemberService      :73   [32m16848458303939k1  [0;39m 保存短信记录表
+2023-05-23 20:43:50.401 INFO  com.jiawa.train.member.service.MemberService      :76   [32m16848458303939k1  [0;39m 对接短信通道
+2023-05-23 20:43:50.401 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m16848458303939k1  [0;39m 返回结果: {"success":true}
+2023-05-23 20:43:50.401 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m16848458303939k1  [0;39m ------------- 结束 耗时：6 ms -------------
+2023-05-23 20:43:50.965 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684845830964z3e  [0;39m ------------- 开始 -------------
+2023-05-23 20:43:50.965 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684845830964z3e  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-05-23 20:43:50.965 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684845830964z3e  [0;39m 类名方法: com.jiawa.train.member.controller.MemberController.login
+2023-05-23 20:43:50.965 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684845830964z3e  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:43:50.965 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684845830964z3e  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
+2023-05-23 20:43:50.967 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845830964z3e  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-05-23 20:43:50.968 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845830964z3e  [0;39m ==> Parameters: 13000000000(String)
+2023-05-23 20:43:50.969 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1684845830964z3e  [0;39m <==    Columns: id, mobile
+2023-05-23 20:43:50.969 TRACE c.j.t.member.mapper.MemberMapper.selectByExample  :143  [32m1684845830964z3e  [0;39m <==        Row: 1650496621592580096, 13000000000
+2023-05-23 20:43:50.969 DEBUG c.j.t.member.mapper.MemberMapper.selectByExample  :137  [32m1684845830964z3e  [0;39m <==      Total: 1
+2023-05-23 20:43:50.970 INFO  com.jiawa.train.common.util.JwtUtil               :37   [32m1684845830964z3e  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:43:50.971 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684845830964z3e  [0;39m 返回结果: {"content":{"id":1650496621592580096,"mobile":"13000000000","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg"},"success":true}
+2023-05-23 20:43:50.971 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684845830964z3e  [0;39m ------------- 结束 耗时：6 ms -------------
+2023-05-23 20:43:52.203 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684845832203ofn  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:43:52.203 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684845832203ofn  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:43:52.203 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684845832203ofn  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:43:52.204 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684845832203ofn  [0;39m ------------- 开始 -------------
+2023-05-23 20:43:52.205 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684845832203ofn  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:43:52.205 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684845832203ofn  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:43:52.205 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684845832203ofn  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:43:52.205 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684845832203ofn  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:43:52.205 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684845832203ofn  [0;39m 查询页码：1
+2023-05-23 20:43:52.205 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684845832203ofn  [0;39m 每页条数：2
+2023-05-23 20:43:52.214 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845832203ofn  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:43:52.216 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845832203ofn  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:43:52.218 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845832203ofn  [0;39m <==    Columns: count(0)
+2023-05-23 20:43:52.218 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845832203ofn  [0;39m <==        Row: 2
+2023-05-23 20:43:52.219 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845832203ofn  [0;39m <==      Total: 1
+2023-05-23 20:43:52.220 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845832203ofn  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:43:52.221 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845832203ofn  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:43:52.224 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845832203ofn  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:43:52.225 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845832203ofn  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:43:52.226 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845832203ofn  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:43:52.227 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845832203ofn  [0;39m <==      Total: 2
+2023-05-23 20:43:52.228 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684845832203ofn  [0;39m 总行数：2
+2023-05-23 20:43:52.229 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684845832203ofn  [0;39m 总页数：1
+2023-05-23 20:43:52.231 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684845832203ofn  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:43:52.231 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684845832203ofn  [0;39m ------------- 结束 耗时：27 ms -------------
+2023-05-23 20:44:00.603 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684845840603jj4  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg
+2023-05-23 20:44:00.604 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684845840603jj4  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:44:00.605 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684845840603jj4  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:44:00.606 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684845840603jj4  [0;39m ------------- 开始 -------------
+2023-05-23 20:44:00.607 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684845840603jj4  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:44:00.607 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684845840603jj4  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:44:00.608 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684845840603jj4  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:44:00.608 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684845840603jj4  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:44:00.608 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684845840603jj4  [0;39m 查询页码：1
+2023-05-23 20:44:00.608 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684845840603jj4  [0;39m 每页条数：2
+2023-05-23 20:44:00.616 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845840603jj4  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:44:00.617 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845840603jj4  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:44:00.618 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845840603jj4  [0;39m <==    Columns: count(0)
+2023-05-23 20:44:00.618 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684845840603jj4  [0;39m <==        Row: 2
+2023-05-23 20:44:00.618 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684845840603jj4  [0;39m <==      Total: 1
+2023-05-23 20:44:00.619 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845840603jj4  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:44:00.620 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845840603jj4  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:44:00.621 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845840603jj4  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:44:00.622 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845840603jj4  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:44:00.623 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684845840603jj4  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:44:00.623 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684845840603jj4  [0;39m <==      Total: 2
+2023-05-23 20:44:00.624 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684845840603jj4  [0;39m 总行数：2
+2023-05-23 20:44:00.624 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684845840603jj4  [0;39m 总页数：1
+2023-05-23 20:44:00.624 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684845840603jj4  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:44:00.625 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684845840603jj4  [0;39m ------------- 结束 耗时：19 ms -------------
+2023-05-23 20:44:01.321 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m16848458413213ko  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:44:01.321 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m16848458413213ko  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:44:01.322 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m16848458413213ko  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:44:01.323 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m16848458413213ko  [0;39m ------------- 开始 -------------
+2023-05-23 20:44:01.323 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m16848458413213ko  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:44:01.323 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m16848458413213ko  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:44:01.323 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m16848458413213ko  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:44:01.323 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m16848458413213ko  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:44:01.324 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m16848458413213ko  [0;39m 查询页码：1
+2023-05-23 20:44:01.324 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m16848458413213ko  [0;39m 每页条数：2
+2023-05-23 20:44:01.336 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848458413213ko  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:44:01.336 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848458413213ko  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:44:01.338 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848458413213ko  [0;39m <==    Columns: count(0)
+2023-05-23 20:44:01.339 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848458413213ko  [0;39m <==        Row: 2
+2023-05-23 20:44:01.339 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848458413213ko  [0;39m <==      Total: 1
+2023-05-23 20:44:01.341 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848458413213ko  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:44:01.341 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848458413213ko  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:44:01.343 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848458413213ko  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:44:01.345 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848458413213ko  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:44:01.346 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848458413213ko  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:44:01.348 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848458413213ko  [0;39m <==      Total: 2
+2023-05-23 20:44:01.349 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m16848458413213ko  [0;39m 总行数：2
+2023-05-23 20:44:01.349 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m16848458413213ko  [0;39m 总页数：1
+2023-05-23 20:44:01.350 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m16848458413213ko  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:44:01.350 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m16848458413213ko  [0;39m ------------- 结束 耗时：27 ms -------------
+2023-05-23 20:46:42.690 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684846002690902  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg
+2023-05-23 20:46:42.691 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684846002690902  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:46:42.691 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684846002690902  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:46:42.693 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684846002690902  [0;39m ------------- 开始 -------------
+2023-05-23 20:46:42.693 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684846002690902  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:46:42.693 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684846002690902  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:46:42.694 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684846002690902  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:46:42.694 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684846002690902  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:46:42.694 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684846002690902  [0;39m 查询页码：1
+2023-05-23 20:46:42.694 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684846002690902  [0;39m 每页条数：2
+2023-05-23 20:46:42.702 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846002690902  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:46:42.703 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846002690902  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:46:42.705 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846002690902  [0;39m <==    Columns: count(0)
+2023-05-23 20:46:42.705 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846002690902  [0;39m <==        Row: 2
+2023-05-23 20:46:42.706 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846002690902  [0;39m <==      Total: 1
+2023-05-23 20:46:42.706 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846002690902  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:46:42.707 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846002690902  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:46:42.708 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846002690902  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:46:42.709 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846002690902  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:46:42.713 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846002690902  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:46:42.714 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846002690902  [0;39m <==      Total: 2
+2023-05-23 20:46:42.714 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684846002690902  [0;39m 总行数：2
+2023-05-23 20:46:42.714 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684846002690902  [0;39m 总页数：1
+2023-05-23 20:46:42.719 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684846002690902  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:46:42.719 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684846002690902  [0;39m ------------- 结束 耗时：26 ms -------------
+2023-05-23 20:46:42.732 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m16848460027323n0  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:46:42.733 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m16848460027323n0  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:46:42.733 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m16848460027323n0  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:46:42.734 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m16848460027323n0  [0;39m ------------- 开始 -------------
+2023-05-23 20:46:42.735 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m16848460027323n0  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:46:42.735 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m16848460027323n0  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:46:42.735 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m16848460027323n0  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:46:42.735 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m16848460027323n0  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:46:42.735 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m16848460027323n0  [0;39m 查询页码：1
+2023-05-23 20:46:42.736 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m16848460027323n0  [0;39m 每页条数：2
+2023-05-23 20:46:42.742 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848460027323n0  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:46:42.742 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848460027323n0  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:46:42.743 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848460027323n0  [0;39m <==    Columns: count(0)
+2023-05-23 20:46:42.744 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848460027323n0  [0;39m <==        Row: 2
+2023-05-23 20:46:42.744 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848460027323n0  [0;39m <==      Total: 1
+2023-05-23 20:46:42.744 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848460027323n0  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:46:42.745 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848460027323n0  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:46:42.746 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848460027323n0  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:46:42.746 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848460027323n0  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:46:42.747 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848460027323n0  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:46:42.747 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848460027323n0  [0;39m <==      Total: 2
+2023-05-23 20:46:42.748 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m16848460027323n0  [0;39m 总行数：2
+2023-05-23 20:46:42.748 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m16848460027323n0  [0;39m 总页数：1
+2023-05-23 20:46:42.749 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m16848460027323n0  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:46:42.749 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m16848460027323n0  [0;39m ------------- 结束 耗时：15 ms -------------
+2023-05-23 20:46:47.291 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m16848460072910ip  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:46:47.292 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m16848460072910ip  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:46:47.293 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m16848460072910ip  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:46:47.294 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m16848460072910ip  [0;39m ------------- 开始 -------------
+2023-05-23 20:46:47.294 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m16848460072910ip  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:46:47.294 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m16848460072910ip  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:46:47.295 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m16848460072910ip  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:46:47.295 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m16848460072910ip  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:46:47.295 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m16848460072910ip  [0;39m 查询页码：1
+2023-05-23 20:46:47.296 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m16848460072910ip  [0;39m 每页条数：2
+2023-05-23 20:46:47.306 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848460072910ip  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:46:47.307 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848460072910ip  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:46:47.308 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848460072910ip  [0;39m <==    Columns: count(0)
+2023-05-23 20:46:47.308 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848460072910ip  [0;39m <==        Row: 2
+2023-05-23 20:46:47.309 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848460072910ip  [0;39m <==      Total: 1
+2023-05-23 20:46:47.310 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848460072910ip  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:46:47.310 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848460072910ip  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:46:47.312 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848460072910ip  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:46:47.313 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848460072910ip  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:46:47.313 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848460072910ip  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:46:47.314 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848460072910ip  [0;39m <==      Total: 2
+2023-05-23 20:46:47.315 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m16848460072910ip  [0;39m 总行数：2
+2023-05-23 20:46:47.316 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m16848460072910ip  [0;39m 总页数：1
+2023-05-23 20:46:47.317 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m16848460072910ip  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:46:47.317 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m16848460072910ip  [0;39m ------------- 结束 耗时：23 ms -------------
+2023-05-23 20:47:03.022 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m16848460230229pz  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:47:03.023 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m16848460230229pz  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:47:03.023 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m16848460230229pz  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:47:03.025 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m16848460230229pz  [0;39m ------------- 开始 -------------
+2023-05-23 20:47:03.025 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m16848460230229pz  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:47:03.025 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m16848460230229pz  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:47:03.025 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m16848460230229pz  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:47:03.026 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m16848460230229pz  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:47:03.026 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m16848460230229pz  [0;39m 查询页码：1
+2023-05-23 20:47:03.026 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m16848460230229pz  [0;39m 每页条数：2
+2023-05-23 20:47:03.039 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848460230229pz  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:47:03.040 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848460230229pz  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:47:03.041 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848460230229pz  [0;39m <==    Columns: count(0)
+2023-05-23 20:47:03.041 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848460230229pz  [0;39m <==        Row: 2
+2023-05-23 20:47:03.042 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848460230229pz  [0;39m <==      Total: 1
+2023-05-23 20:47:03.042 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848460230229pz  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:47:03.043 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848460230229pz  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:47:03.044 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848460230229pz  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:47:03.044 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848460230229pz  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:47:03.045 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848460230229pz  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:47:03.046 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848460230229pz  [0;39m <==      Total: 2
+2023-05-23 20:47:03.046 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m16848460230229pz  [0;39m 总行数：2
+2023-05-23 20:47:03.047 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m16848460230229pz  [0;39m 总页数：1
+2023-05-23 20:47:03.048 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m16848460230229pz  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:47:03.048 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m16848460230229pz  [0;39m ------------- 结束 耗时：23 ms -------------
+2023-05-23 20:47:03.057 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684846023057orn  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg
+2023-05-23 20:47:03.057 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684846023057orn  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:47:03.058 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684846023057orn  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:47:03.058 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684846023057orn  [0;39m ------------- 开始 -------------
+2023-05-23 20:47:03.059 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684846023057orn  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:47:03.059 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684846023057orn  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:47:03.059 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684846023057orn  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:47:03.059 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684846023057orn  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:47:03.059 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684846023057orn  [0;39m 查询页码：1
+2023-05-23 20:47:03.059 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684846023057orn  [0;39m 每页条数：2
+2023-05-23 20:47:03.068 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846023057orn  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:47:03.068 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846023057orn  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:47:03.070 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846023057orn  [0;39m <==    Columns: count(0)
+2023-05-23 20:47:03.070 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846023057orn  [0;39m <==        Row: 2
+2023-05-23 20:47:03.071 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846023057orn  [0;39m <==      Total: 1
+2023-05-23 20:47:03.071 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846023057orn  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:47:03.072 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846023057orn  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:47:03.073 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846023057orn  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:47:03.073 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846023057orn  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:47:03.074 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846023057orn  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:47:03.075 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846023057orn  [0;39m <==      Total: 2
+2023-05-23 20:47:03.076 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684846023057orn  [0;39m 总行数：2
+2023-05-23 20:47:03.076 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684846023057orn  [0;39m 总页数：1
+2023-05-23 20:47:03.077 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684846023057orn  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:47:03.077 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684846023057orn  [0;39m ------------- 结束 耗时：19 ms -------------
+2023-05-23 20:47:24.327 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684846044327a7v  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:47:24.328 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684846044327a7v  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:47:24.328 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684846044327a7v  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:47:24.329 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684846044327a7v  [0;39m ------------- 开始 -------------
+2023-05-23 20:47:24.329 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684846044327a7v  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:47:24.330 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684846044327a7v  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:47:24.330 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684846044327a7v  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:47:24.330 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684846044327a7v  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:47:31.277 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684846044327a7v  [0;39m 查询页码：1
+2023-05-23 20:47:31.279 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684846044327a7v  [0;39m 每页条数：2
+2023-05-23 20:47:31.293 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846044327a7v  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:47:31.295 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846044327a7v  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:47:31.298 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846044327a7v  [0;39m <==    Columns: count(0)
+2023-05-23 20:47:31.299 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846044327a7v  [0;39m <==        Row: 2
+2023-05-23 20:47:31.301 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846044327a7v  [0;39m <==      Total: 1
+2023-05-23 20:47:31.303 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846044327a7v  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:47:31.305 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846044327a7v  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:47:31.312 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846044327a7v  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:47:31.316 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846044327a7v  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:47:31.321 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846044327a7v  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:47:31.324 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846044327a7v  [0;39m <==      Total: 2
+2023-05-23 20:47:31.326 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684846044327a7v  [0;39m 总行数：2
+2023-05-23 20:47:31.328 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684846044327a7v  [0;39m 总页数：1
+2023-05-23 20:47:38.199 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684846044327a7v  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:47:38.200 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684846044327a7v  [0;39m ------------- 结束 耗时：13871 ms -------------
+2023-05-23 20:48:11.214 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684846091214jg5  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU2NjgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjA2OCwiaWF0IjoxNjg0ODQ1NjY4fQ.Dik5XlcTjt_8VCYuSs5DIqtwp21FVwBrtIIa6fK4gkg
+2023-05-23 20:48:11.216 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684846091214jg5  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:48:11.216 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684846091214jg5  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:48:11.219 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684846091214jg5  [0;39m ------------- 开始 -------------
+2023-05-23 20:48:11.219 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684846091214jg5  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:48:11.220 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684846091214jg5  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:48:11.220 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684846091214jg5  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:48:11.220 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684846091214jg5  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:48:15.672 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684846091214jg5  [0;39m 查询页码：1
+2023-05-23 20:48:15.672 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684846091214jg5  [0;39m 每页条数：2
+2023-05-23 20:48:15.683 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846091214jg5  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:48:15.684 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846091214jg5  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:48:15.685 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846091214jg5  [0;39m <==    Columns: count(0)
+2023-05-23 20:48:15.685 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846091214jg5  [0;39m <==        Row: 2
+2023-05-23 20:48:15.685 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846091214jg5  [0;39m <==      Total: 1
+2023-05-23 20:48:15.686 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846091214jg5  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:48:15.686 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846091214jg5  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:48:15.687 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846091214jg5  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:48:15.688 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846091214jg5  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:48:15.688 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846091214jg5  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:48:15.688 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846091214jg5  [0;39m <==      Total: 2
+2023-05-23 20:48:15.689 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684846091214jg5  [0;39m 总行数：2
+2023-05-23 20:48:15.689 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684846091214jg5  [0;39m 总页数：1
+2023-05-23 20:48:15.689 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684846091214jg5  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:48:15.689 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684846091214jg5  [0;39m ------------- 结束 耗时：4470 ms -------------
+2023-05-23 20:48:15.698 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684846095698mj3  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:48:15.698 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684846095698mj3  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:48:15.699 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684846095698mj3  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:48:15.701 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684846095698mj3  [0;39m ------------- 开始 -------------
+2023-05-23 20:48:15.701 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684846095698mj3  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:48:15.701 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684846095698mj3  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:48:15.701 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684846095698mj3  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:48:15.701 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684846095698mj3  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:48:17.253 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684846095698mj3  [0;39m 查询页码：1
+2023-05-23 20:48:17.253 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684846095698mj3  [0;39m 每页条数：2
+2023-05-23 20:48:17.262 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846095698mj3  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:48:17.263 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846095698mj3  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:48:17.264 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846095698mj3  [0;39m <==    Columns: count(0)
+2023-05-23 20:48:17.264 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846095698mj3  [0;39m <==        Row: 2
+2023-05-23 20:48:17.264 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846095698mj3  [0;39m <==      Total: 1
+2023-05-23 20:48:17.265 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846095698mj3  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:48:17.265 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846095698mj3  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:48:17.266 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846095698mj3  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:48:17.267 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846095698mj3  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:48:17.267 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846095698mj3  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:48:17.268 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846095698mj3  [0;39m <==      Total: 2
+2023-05-23 20:48:17.268 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684846095698mj3  [0;39m 总行数：2
+2023-05-23 20:48:17.268 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684846095698mj3  [0;39m 总页数：1
+2023-05-23 20:48:17.269 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684846095698mj3  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":2},"success":true}
+2023-05-23 20:48:17.269 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684846095698mj3  [0;39m ------------- 结束 耗时：1568 ms -------------
+2023-05-23 20:48:27.161 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684846107161yge  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:48:27.162 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684846107161yge  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:48:27.162 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684846107161yge  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:48:27.164 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684846107161yge  [0;39m ------------- 开始 -------------
+2023-05-23 20:48:27.164 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684846107161yge  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/save POST
+2023-05-23 20:48:27.165 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684846107161yge  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.save
+2023-05-23 20:48:27.165 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684846107161yge  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:48:27.165 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684846107161yge  [0;39m 请求参数: [{"idCard":"456","name":"456","type":"2"}]
+2023-05-23 20:48:27.167 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m1684846107161yge  [0;39m ==>  Preparing: insert into passenger (id, member_id, `name`, id_card, `type`, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?)
+2023-05-23 20:48:27.168 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m1684846107161yge  [0;39m ==> Parameters: 1660991077127163904(Long), 1650496621592580096(Long), 456(String), 456(String), 2(String), 2023-05-23 20:48:27.165(Timestamp), 2023-05-23 20:48:27.165(Timestamp)
+2023-05-23 20:48:27.184 DEBUG c.jiawa.train.member.mapper.PassengerMapper.insert:137  [32m1684846107161yge  [0;39m <==    Updates: 1
+2023-05-23 20:48:27.185 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684846107161yge  [0;39m 返回结果: {"success":true}
+2023-05-23 20:48:27.185 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684846107161yge  [0;39m ------------- 结束 耗时：21 ms -------------
+2023-05-23 20:48:32.089 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684846112089car  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:48:32.089 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684846112089car  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:48:32.090 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684846112089car  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:48:32.091 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684846112089car  [0;39m ------------- 开始 -------------
+2023-05-23 20:48:32.091 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684846112089car  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:48:32.091 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684846112089car  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:48:32.092 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684846112089car  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:48:32.092 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684846112089car  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:48:32.092 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684846112089car  [0;39m 查询页码：1
+2023-05-23 20:48:32.092 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684846112089car  [0;39m 每页条数：2
+2023-05-23 20:48:32.101 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846112089car  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:48:32.101 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846112089car  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:48:32.102 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846112089car  [0;39m <==    Columns: count(0)
+2023-05-23 20:48:32.103 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846112089car  [0;39m <==        Row: 3
+2023-05-23 20:48:32.103 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846112089car  [0;39m <==      Total: 1
+2023-05-23 20:48:32.103 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846112089car  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:48:32.103 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846112089car  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:48:32.105 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846112089car  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:48:32.106 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846112089car  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:48:32.107 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846112089car  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:48:32.108 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846112089car  [0;39m <==      Total: 2
+2023-05-23 20:48:32.108 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684846112089car  [0;39m 总行数：3
+2023-05-23 20:48:32.109 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684846112089car  [0;39m 总页数：2
+2023-05-23 20:48:32.110 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684846112089car  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":3},"success":true}
+2023-05-23 20:48:32.111 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684846112089car  [0;39m ------------- 结束 耗时：20 ms -------------
+2023-05-23 20:52:54.186 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m16848463741868ja  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:52:54.187 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m16848463741868ja  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:52:54.187 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m16848463741868ja  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:52:54.188 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m16848463741868ja  [0;39m ------------- 开始 -------------
+2023-05-23 20:52:54.188 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m16848463741868ja  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:52:54.188 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m16848463741868ja  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:52:54.189 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m16848463741868ja  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:52:54.189 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m16848463741868ja  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:52:54.189 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m16848463741868ja  [0;39m 查询页码：1
+2023-05-23 20:52:54.189 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m16848463741868ja  [0;39m 每页条数：2
+2023-05-23 20:52:54.196 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848463741868ja  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:52:54.196 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848463741868ja  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:52:54.197 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848463741868ja  [0;39m <==    Columns: count(0)
+2023-05-23 20:52:54.198 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m16848463741868ja  [0;39m <==        Row: 3
+2023-05-23 20:52:54.198 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m16848463741868ja  [0;39m <==      Total: 1
+2023-05-23 20:52:54.198 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848463741868ja  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:52:54.198 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848463741868ja  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:52:54.199 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848463741868ja  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:52:54.200 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848463741868ja  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:52:54.200 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m16848463741868ja  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:52:54.201 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m16848463741868ja  [0;39m <==      Total: 2
+2023-05-23 20:52:54.201 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m16848463741868ja  [0;39m 总行数：3
+2023-05-23 20:52:54.201 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m16848463741868ja  [0;39m 总页数：2
+2023-05-23 20:52:54.201 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m16848463741868ja  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":3},"success":true}
+2023-05-23 20:52:54.201 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m16848463741868ja  [0;39m ------------- 结束 耗时：13 ms -------------
+2023-05-23 20:53:04.893 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684846384893yhp  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:53:04.894 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684846384893yhp  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:53:04.894 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684846384893yhp  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:53:04.895 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684846384893yhp  [0;39m ------------- 开始 -------------
+2023-05-23 20:53:04.896 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684846384893yhp  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:53:04.896 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684846384893yhp  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:53:04.896 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684846384893yhp  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:53:04.896 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684846384893yhp  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:53:04.896 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684846384893yhp  [0;39m 查询页码：1
+2023-05-23 20:53:04.896 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684846384893yhp  [0;39m 每页条数：2
+2023-05-23 20:53:04.907 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846384893yhp  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:53:04.907 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846384893yhp  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:53:04.909 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846384893yhp  [0;39m <==    Columns: count(0)
+2023-05-23 20:53:04.909 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846384893yhp  [0;39m <==        Row: 3
+2023-05-23 20:53:04.910 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846384893yhp  [0;39m <==      Total: 1
+2023-05-23 20:53:04.911 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846384893yhp  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:53:04.911 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846384893yhp  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:53:04.912 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846384893yhp  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:53:04.913 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846384893yhp  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:53:04.914 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846384893yhp  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:53:04.915 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846384893yhp  [0;39m <==      Total: 2
+2023-05-23 20:53:04.916 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684846384893yhp  [0;39m 总行数：3
+2023-05-23 20:53:04.916 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684846384893yhp  [0;39m 总页数：2
+2023-05-23 20:53:04.917 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684846384893yhp  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":3},"success":true}
+2023-05-23 20:53:04.917 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684846384893yhp  [0;39m ------------- 结束 耗时：22 ms -------------
+2023-05-23 20:53:24.945 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684846404945q29  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:53:24.946 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684846404945q29  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:53:24.947 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684846404945q29  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:53:24.948 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684846404945q29  [0;39m ------------- 开始 -------------
+2023-05-23 20:53:24.948 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684846404945q29  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:53:24.948 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684846404945q29  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:53:24.949 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684846404945q29  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:53:24.949 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684846404945q29  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:53:24.949 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684846404945q29  [0;39m 查询页码：1
+2023-05-23 20:53:24.949 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684846404945q29  [0;39m 每页条数：2
+2023-05-23 20:53:24.961 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846404945q29  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:53:24.962 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846404945q29  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:53:24.963 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846404945q29  [0;39m <==    Columns: count(0)
+2023-05-23 20:53:24.964 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846404945q29  [0;39m <==        Row: 3
+2023-05-23 20:53:24.964 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846404945q29  [0;39m <==      Total: 1
+2023-05-23 20:53:24.965 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846404945q29  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:53:24.966 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846404945q29  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:53:24.967 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846404945q29  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:53:24.968 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846404945q29  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:53:24.969 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846404945q29  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:53:24.969 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846404945q29  [0;39m <==      Total: 2
+2023-05-23 20:53:24.970 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684846404945q29  [0;39m 总行数：3
+2023-05-23 20:53:24.970 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684846404945q29  [0;39m 总页数：2
+2023-05-23 20:53:24.971 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684846404945q29  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":3},"success":true}
+2023-05-23 20:53:24.972 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684846404945q29  [0;39m ------------- 结束 耗时：24 ms -------------
+2023-05-23 20:53:39.644 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684846419644kls  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:53:39.644 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684846419644kls  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:53:39.645 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684846419644kls  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:53:39.645 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684846419644kls  [0;39m ------------- 开始 -------------
+2023-05-23 20:53:39.646 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684846419644kls  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:53:39.646 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684846419644kls  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:53:39.646 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684846419644kls  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:53:39.646 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684846419644kls  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:53:39.646 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684846419644kls  [0;39m 查询页码：1
+2023-05-23 20:53:39.646 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684846419644kls  [0;39m 每页条数：2
+2023-05-23 20:53:39.656 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846419644kls  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:53:39.657 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846419644kls  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:53:39.658 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846419644kls  [0;39m <==    Columns: count(0)
+2023-05-23 20:53:39.658 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846419644kls  [0;39m <==        Row: 3
+2023-05-23 20:53:39.659 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846419644kls  [0;39m <==      Total: 1
+2023-05-23 20:53:39.659 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846419644kls  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:53:39.660 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846419644kls  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:53:39.661 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846419644kls  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:53:39.661 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846419644kls  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:53:39.662 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846419644kls  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:53:39.663 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846419644kls  [0;39m <==      Total: 2
+2023-05-23 20:53:39.663 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684846419644kls  [0;39m 总行数：3
+2023-05-23 20:53:39.663 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684846419644kls  [0;39m 总页数：2
+2023-05-23 20:53:39.664 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684846419644kls  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":3},"success":true}
+2023-05-23 20:53:39.664 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684846419644kls  [0;39m ------------- 结束 耗时：19 ms -------------
+2023-05-23 20:54:33.460 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684846473460dtd  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 20:54:33.461 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684846473460dtd  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:54:33.461 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684846473460dtd  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 20:54:33.462 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684846473460dtd  [0;39m ------------- 开始 -------------
+2023-05-23 20:54:33.462 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684846473460dtd  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 20:54:33.462 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684846473460dtd  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 20:54:33.462 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684846473460dtd  [0;39m 远程地址: 127.0.0.1
+2023-05-23 20:54:33.463 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684846473460dtd  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 20:54:33.463 INFO  com.jiawa.train.member.service.PassengerService   :49   [32m1684846473460dtd  [0;39m 查询页码：1
+2023-05-23 20:54:33.463 INFO  com.jiawa.train.member.service.PassengerService   :50   [32m1684846473460dtd  [0;39m 每页条数：2
+2023-05-23 20:54:33.474 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846473460dtd  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 20:54:33.475 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846473460dtd  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 20:54:33.476 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846473460dtd  [0;39m <==    Columns: count(0)
+2023-05-23 20:54:33.477 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684846473460dtd  [0;39m <==        Row: 3
+2023-05-23 20:54:33.477 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684846473460dtd  [0;39m <==      Total: 1
+2023-05-23 20:54:33.478 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846473460dtd  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) LIMIT ?
+2023-05-23 20:54:33.479 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846473460dtd  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 20:54:33.480 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846473460dtd  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 20:54:33.481 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846473460dtd  [0;39m <==        Row: 1660625317242474496, 1650496621592580096, 123, 123, 2, 2023-05-22 20:35:03.208, 2023-05-22 20:35:03.208
+2023-05-23 20:54:33.481 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684846473460dtd  [0;39m <==        Row: 1660989283152039936, 1650496621592580096, 333, 123, 2, 2023-05-23 20:41:19.442, 2023-05-23 20:41:19.442
+2023-05-23 20:54:33.482 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684846473460dtd  [0;39m <==      Total: 2
+2023-05-23 20:54:33.482 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684846473460dtd  [0;39m 总行数：3
+2023-05-23 20:54:33.483 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684846473460dtd  [0;39m 总页数：2
+2023-05-23 20:54:33.483 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684846473460dtd  [0;39m 返回结果: {"content":{"list":[{"createTime":1684758903208,"id":1660625317242474496,"idCard":"123","memberId":1650496621592580096,"name":"123","type":"2","updateTime":1684758903208},{"createTime":1684845679442,"id":1660989283152039936,"idCard":"123","memberId":1650496621592580096,"name":"333","type":"2","updateTime":1684845679442}],"total":3},"success":true}
+2023-05-23 20:54:33.484 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684846473460dtd  [0;39m ------------- 结束 耗时：22 ms -------------
