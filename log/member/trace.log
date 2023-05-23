@@ -1518,3 +1518,316 @@ Unconditional classes:
 2023-05-23 22:49:43.956 DEBUG c.j.t.m.mapper.PassengerMapper.updateByPrimaryKey :137  [32m1684853383930k6o  [0;39m <==    Updates: 1
 2023-05-23 22:49:43.957 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684853383930k6o  [0;39m 返回结果: {"success":true}
 2023-05-23 22:49:43.957 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684853383930k6o  [0;39m ------------- 结束 耗时：19 ms -------------
+2023-05-23 22:59:30.718 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684853970718i0s  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 22:59:30.719 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684853970718i0s  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 22:59:30.720 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684853970718i0s  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 22:59:30.738 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684853970718i0s  [0;39m ------------- 开始 -------------
+2023-05-23 22:59:30.738 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684853970718i0s  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 22:59:30.739 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684853970718i0s  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 22:59:30.739 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684853970718i0s  [0;39m 远程地址: 127.0.0.1
+2023-05-23 22:59:30.740 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684853970718i0s  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 22:59:30.744 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684853970718i0s  [0;39m 查询页码：1
+2023-05-23 22:59:30.744 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684853970718i0s  [0;39m 每页条数：2
+2023-05-23 22:59:30.759 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684853970718i0s  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 22:59:30.759 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684853970718i0s  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 22:59:30.762 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684853970718i0s  [0;39m <==    Columns: count(0)
+2023-05-23 22:59:30.762 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684853970718i0s  [0;39m <==        Row: 4
+2023-05-23 22:59:30.763 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684853970718i0s  [0;39m <==      Total: 1
+2023-05-23 22:59:30.764 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684853970718i0s  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-05-23 22:59:30.764 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684853970718i0s  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 22:59:30.765 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684853970718i0s  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 22:59:30.766 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684853970718i0s  [0;39m <==        Row: 1661000030162653184, 1650496621592580096, 789, 678, 2, 2023-05-23 21:24:01.734, 2023-05-23 21:24:01.734
+2023-05-23 22:59:30.767 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684853970718i0s  [0;39m <==        Row: 1660991077127163904, 1650496621592580096, 456, 456, 2, 2023-05-23 20:48:27.165, 2023-05-23 20:48:27.165
+2023-05-23 22:59:30.767 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684853970718i0s  [0;39m <==      Total: 2
+2023-05-23 22:59:30.768 INFO  com.jiawa.train.member.service.PassengerService   :61   [32m1684853970718i0s  [0;39m 总行数：4
+2023-05-23 22:59:30.769 INFO  com.jiawa.train.member.service.PassengerService   :62   [32m1684853970718i0s  [0;39m 总页数：2
+2023-05-23 22:59:30.773 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684853970718i0s  [0;39m 返回结果: {"content":{"list":[{"createTime":1684848241734,"id":1661000030162653184,"idCard":"678","memberId":1650496621592580096,"name":"789","type":"2","updateTime":1684848241734},{"createTime":1684846107165,"id":1660991077127163904,"idCard":"456","memberId":1650496621592580096,"name":"456","type":"2","updateTime":1684846107165}],"total":4},"success":true}
+2023-05-23 22:59:30.773 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684853970718i0s  [0;39m ------------- 结束 耗时：35 ms -------------
+2023-05-23 22:59:32.702 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684853972702was  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 22:59:32.703 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684853972702was  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 22:59:32.703 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684853972702was  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 22:59:32.704 INFO  com.jiawa.train.common.aspect.LogAspect           :48   [32m1684853972702was  [0;39m ------------- 开始 -------------
+2023-05-23 22:59:32.704 INFO  com.jiawa.train.common.aspect.LogAspect           :49   [32m1684853972702was  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/query-list GET
+2023-05-23 22:59:32.704 INFO  com.jiawa.train.common.aspect.LogAspect           :50   [32m1684853972702was  [0;39m 类名方法: com.jiawa.train.member.controller.PassengerController.queryList
+2023-05-23 22:59:32.704 INFO  com.jiawa.train.common.aspect.LogAspect           :51   [32m1684853972702was  [0;39m 远程地址: 127.0.0.1
+2023-05-23 22:59:32.705 INFO  com.jiawa.train.common.aspect.LogAspect           :72   [32m1684853972702was  [0;39m 请求参数: [{"page":1,"size":2}]
+2023-05-23 22:59:32.705 INFO  com.jiawa.train.member.service.PassengerService   :55   [32m1684853972702was  [0;39m 查询页码：1
+2023-05-23 22:59:32.705 INFO  com.jiawa.train.member.service.PassengerService   :56   [32m1684853972702was  [0;39m 每页条数：2
+2023-05-23 22:59:32.715 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684853972702was  [0;39m ==>  Preparing: SELECT count(0) FROM passenger WHERE (member_id = ?)
+2023-05-23 22:59:32.716 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684853972702was  [0;39m ==> Parameters: 1650496621592580096(Long)
+2023-05-23 22:59:32.717 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684853972702was  [0;39m <==    Columns: count(0)
+2023-05-23 22:59:32.718 TRACE c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :143  [32m1684853972702was  [0;39m <==        Row: 4
+2023-05-23 22:59:32.718 DEBUG c.j.t.m.m.PassengerMapper.selectByExample_COUNT   :137  [32m1684853972702was  [0;39m <==      Total: 1
+2023-05-23 22:59:32.719 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684853972702was  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? ) order by id desc LIMIT ?
+2023-05-23 22:59:32.720 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684853972702was  [0;39m ==> Parameters: 1650496621592580096(Long), 2(Integer)
+2023-05-23 22:59:32.721 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684853972702was  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2023-05-23 22:59:32.722 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684853972702was  [0;39m <==        Row: 1661000030162653184, 1650496621592580096, 789, 678, 2, 2023-05-23 21:24:01.734, 2023-05-23 21:24:01.734
+2023-05-23 22:59:32.723 TRACE c.j.t.m.mapper.PassengerMapper.selectByExample    :143  [32m1684853972702was  [0;39m <==        Row: 1660991077127163904, 1650496621592580096, 456, 456, 2, 2023-05-23 20:48:27.165, 2023-05-23 20:48:27.165
+2023-05-23 22:59:32.724 DEBUG c.j.t.m.mapper.PassengerMapper.selectByExample    :137  [32m1684853972702was  [0;39m <==      Total: 2
+2023-05-23 22:59:32.724 INFO  com.jiawa.train.member.service.PassengerService   :61   [32m1684853972702was  [0;39m 总行数：4
+2023-05-23 22:59:32.724 INFO  com.jiawa.train.member.service.PassengerService   :62   [32m1684853972702was  [0;39m 总页数：2
+2023-05-23 22:59:32.725 INFO  com.jiawa.train.common.aspect.LogAspect           :84   [32m1684853972702was  [0;39m 返回结果: {"content":{"list":[{"createTime":1684848241734,"id":1661000030162653184,"idCard":"678","memberId":1650496621592580096,"name":"789","type":"2","updateTime":1684848241734},{"createTime":1684846107165,"id":1660991077127163904,"idCard":"456","memberId":1650496621592580096,"name":"456","type":"2","updateTime":1684846107165}],"total":4},"success":true}
+2023-05-23 22:59:32.726 INFO  com.jiawa.train.common.aspect.LogAspect           :85   [32m1684853972702was  [0;39m ------------- 结束 耗时：22 ms -------------
+2023-05-23 22:59:37.599 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m16848539775997d2  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 22:59:37.599 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m16848539775997d2  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 22:59:37.600 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m16848539775997d2  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 22:59:37.609 ERROR c.j.t.common.controller.ControllerExceptionHandler:29   [32m16848539775997d2  [0;39m 系统异常：
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-05-23 21:24:01": not a valid representation (error: Failed to parse Date value '2023-05-23 21:24:01': Cannot parse date "2023-05-23 21:24:01": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:406)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:182)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:163)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-05-23 21:24:01": not a valid representation (error: Failed to parse Date value '2023-05-23 21:24:01': Cannot parse date "2023-05-23 21:24:01": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 120] (through reference chain: com.jiawa.train.member.req.PassengerSaveReq["createTime"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1996)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:1224)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseDate(StdDeserializer.java:1362)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseDate(StdDeserializer.java:1304)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateBasedDeserializer._parseDate(DateDeserializers.java:201)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateDeserializer.deserialize(DateDeserializers.java:303)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateDeserializer.deserialize(DateDeserializers.java:281)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:392)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395)
+	... 51 common frames omitted
+2023-05-23 22:59:37.618 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m16848539775997d2  [0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-05-23 21:24:01": not a valid representation (error: Failed to parse Date value '2023-05-23 21:24:01': Cannot parse date "2023-05-23 21:24:01": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))]
+2023-05-23 22:59:44.500 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684853984500if6  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 22:59:44.500 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684853984500if6  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 22:59:44.501 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684853984500if6  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 22:59:44.502 ERROR c.j.t.common.controller.ControllerExceptionHandler:29   [32m1684853984500if6  [0;39m 系统异常：
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-05-23 21:24:01": not a valid representation (error: Failed to parse Date value '2023-05-23 21:24:01': Cannot parse date "2023-05-23 21:24:01": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:406)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:182)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:163)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-05-23 21:24:01": not a valid representation (error: Failed to parse Date value '2023-05-23 21:24:01': Cannot parse date "2023-05-23 21:24:01": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 115] (through reference chain: com.jiawa.train.member.req.PassengerSaveReq["createTime"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1996)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:1224)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseDate(StdDeserializer.java:1362)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseDate(StdDeserializer.java:1304)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateBasedDeserializer._parseDate(DateDeserializers.java:201)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateDeserializer.deserialize(DateDeserializers.java:303)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateDeserializer.deserialize(DateDeserializers.java:281)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:392)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395)
+	... 51 common frames omitted
+2023-05-23 22:59:44.505 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1684853984500if6  [0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-05-23 21:24:01": not a valid representation (error: Failed to parse Date value '2023-05-23 21:24:01': Cannot parse date "2023-05-23 21:24:01": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))]
+2023-05-23 22:59:47.139 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:29   [32m1684853987139nhz  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODQ4NDU4MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2NTA0OTY2MjE1OTI1ODAwOTYsImV4cCI6MTY4NDkzMjIzMCwiaWF0IjoxNjg0ODQ1ODMwfQ.uOywUubaIvUDOtjwPI7ndgatwrEXCifYKQf_ibvOTCg
+2023-05-23 22:59:47.139 INFO  com.jiawa.train.common.util.JwtUtil               :55   [32m1684853987139nhz  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 22:59:47.139 INFO  c.jiawa.train.common.interceptor.MemberInterceptor:31   [32m1684853987139nhz  [0;39m 当前登录会员：{"mobile":"13000000000","id":1650496621592580096}
+2023-05-23 22:59:47.140 ERROR c.j.t.common.controller.ControllerExceptionHandler:29   [32m1684853987139nhz  [0;39m 系统异常：
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-05-23 21:24:01": not a valid representation (error: Failed to parse Date value '2023-05-23 21:24:01': Cannot parse date "2023-05-23 21:24:01": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:406)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:182)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:163)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2023-05-23 21:24:01": not a valid representation (error: Failed to parse Date value '2023-05-23 21:24:01': Cannot parse date "2023-05-23 21:24:01": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 115] (through reference chain: com.jiawa.train.member.req.PassengerSaveReq["createTime"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1996)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:1224)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseDate(StdDeserializer.java:1362)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseDate(StdDeserializer.java:1304)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateBasedDeserializer._parseDate(DateDeserializers.java:201)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateDeserializer.deserialize(DateDeserializers.java:303)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateDeserializer.deserialize(DateDeserializers.java:281)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:392)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395)
+	... 51 common frames omitted
+2023-05-23 22:59:47.141 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1684853987139nhz  [0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2023-05-23 21:24:01": not a valid representation (error: Failed to parse Date value '2023-05-23 21:24:01': Cannot parse date "2023-05-23 21:24:01": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSX', parsing fails (leniency? null))]
+2023-05-23 22:59:56.144 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-05-23 22:59:56.169 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-05-23 22:59:56.169 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-05-23 22:59:56.170 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-23 22:59:56.172 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-5 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2023-05-23 22:59:56.173 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-05-23 22:59:56.177 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-05-23 22:59:56.178 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-5 - Shutdown initiated...
+2023-05-23 22:59:56.191 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-5 - Shutdown completed.
+2023-05-23 22:59:56.672 INFO  com.jiawa.train.member.config.MemberApplication   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.6 with PID 9564 (D:\devCode\train\member\target\classes started by HJT in D:\devCode\train)
+2023-05-23 22:59:56.672 INFO  com.jiawa.train.member.config.MemberApplication   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-05-23 22:59:57.108 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=b51d6f25-f5f0-38de-882a-1bde2b617ce2
+2023-05-23 22:59:57.286 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-05-23 22:59:57.287 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-05-23 22:59:57.287 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-05-23 22:59:57.287 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-05-23 22:59:57.303 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-05-23 22:59:57.304 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 625 ms
+2023-05-23 22:59:57.729 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-05-23 22:59:57.877 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-05-23 22:59:58.224 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-05-23 22:59:58.228 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-05-23 22:59:58.507 INFO  com.jiawa.train.member.config.MemberApplication   :57   [32m                  [0;39m Started MemberApplication in 2.215 seconds (process running for 8795.211)
+2023-05-23 22:59:58.508 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-05-23 22:59:58.509 INFO  com.jiawa.train.member.config.MemberApplication   :19   [32m                  [0;39m 启动成功！！
+2023-05-23 22:59:58.509 INFO  com.jiawa.train.member.config.MemberApplication   :20   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
