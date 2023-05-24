@@ -30,20 +30,13 @@ public class ServerGenerator {
         // new File(servicePath).mkdirs();
         System.out.println("servicePath: " + serverPath);
 
-
         // 读取table节点
         Document document = new SAXReader().read("generator/" + generatorPath);
-        //  因为mybatis-generator没有命名空间，所以可以直接//查找属性名字
-//        Node table = document.selectSingleNode("//table");
-//        System.out.println(table);
-        Node tableName = document.selectSingleNode("//@tableName");
-        Node domainObjectName = document.selectSingleNode("//@domainObjectName");
-//        Node table = document.selectSingleNode("//table");
-//        System.out.println(table);
-//        Node tableName = table.selectSingleNode("@tableName");
-//        Node domainObjectName = table.selectSingleNode("@domainObjectName");
+        Node table = document.selectSingleNode("//table");
+        System.out.println(table);
+        Node tableName = table.selectSingleNode("@tableName");
+        Node domainObjectName = table.selectSingleNode("@domainObjectName");
         System.out.println(tableName.getText() + "/" + domainObjectName.getText());
-
 
         // 为DbUtil设置数据源
         Node connectionURL = document.selectSingleNode("//@connectionURL");
