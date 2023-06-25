@@ -1,51 +1,32 @@
 <template>
-    <a-layout-header class="header">
-        <div class="logo" />
-        <div style="float: right; color: white;">
-            欢迎使用管理控台
-        </div>
-        <a-menu
-                v-model:selectedKeys="selectedKeys"
-                theme="dark"
-                mode="horizontal"
-                :style="{ lineHeight: '64px' }"
-        >
-            <a-menu-item key="/welcome">
-                <router-link to="/welcome">
-                    <coffee-outlined /> &nbsp; 欢迎
-                </router-link>
-            </a-menu-item>
-            <a-menu-item key="/about">
-                <router-link to="/about">
-                    <user-outlined /> &nbsp; 关于
-                </router-link>
-            </a-menu-item>
-        </a-menu>
-    </a-layout-header>
+    <a-layout id="components-layout-demo-top-side-2">
+        <the-header-view></the-header-view>
+        <a-layout>
+            <the-sider-view></the-sider-view>
+            <a-layout-content
+                :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
+            >
+                <router-view></router-view>
+            </a-layout-content>
+        </a-layout>
+    </a-layout>
 </template>
-
 <script>
-import {defineComponent, ref, watch} from 'vue';
-import router from '@/router'
+import { defineComponent } from 'vue';
+import TheHeaderView from "@/components/the-header";
+import TheSiderView from "@/components/the-sider";
 
 export default defineComponent({
-    name: "the-header-view",
+    components: {
+        TheSiderView,
+        TheHeaderView,
+    },
     setup() {
-        const selectedKeys = ref([]);
-
-        watch(() => router.currentRoute.value.path, (newValue) => {
-            console.log('watch', newValue);
-            selectedKeys.value = [];
-            selectedKeys.value.push(newValue);
-        }, {immediate: true});
         return {
-            selectedKeys
         };
     },
 });
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 
 </style>
