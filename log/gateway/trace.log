@@ -226,3 +226,42 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 2023-06-25 22:16:53.108 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2023-06-25 22:16:53.108 INFO  com.jiawa.train.gateway.config.GateWayApplication :17   [32m                  [0;39m 启动成功！！
 2023-06-25 22:16:53.109 INFO  com.jiawa.train.gateway.config.GateWayApplication :18   [32m                  [0;39m 网关地址: 	http://127.0.0.1:8000
+2023-06-25 22:20:30.743 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-06-25 22:20:30.793 INFO  com.jiawa.train.gateway.config.GateWayApplication :51   [32m                  [0;39m Starting GateWayApplication using Java 17.0.6 with PID 7972 (D:\devCode\train\gateway\target\classes started by HJT in D:\devCode\train)
+2023-06-25 22:20:30.794 INFO  com.jiawa.train.gateway.config.GateWayApplication :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-06-25 22:20:30.845 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-25 22:20:30.845 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-25 22:20:31.550 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=961707ab-26f4-3ad8-8cb2-0e5c15368f0a
+2023-06-25 22:20:32.465 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-06-25 22:20:32.466 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-06-25 22:20:32.466 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-06-25 22:20:32.467 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-06-25 22:20:32.467 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-06-25 22:20:32.467 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-06-25 22:20:32.468 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-06-25 22:20:32.468 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-06-25 22:20:32.468 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-06-25 22:20:32.469 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-06-25 22:20:32.469 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-25 22:20:32.469 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-06-25 22:20:32.470 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-06-25 22:20:32.470 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-25 22:20:32.659 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-06-25 22:20:33.195 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-06-25 22:20:33.714 INFO  com.jiawa.train.gateway.config.GateWayApplication :57   [32m                  [0;39m Started GateWayApplication in 3.84 seconds (process running for 4.684)
+2023-06-25 22:20:33.717 INFO  com.jiawa.train.gateway.config.GateWayApplication :17   [32m                  [0;39m 启动成功！！
+2023-06-25 22:20:33.718 INFO  com.jiawa.train.gateway.config.GateWayApplication :18   [32m                  [0;39m 网关地址: 	http://127.0.0.1:8000
+2023-06-25 22:23:23.070 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/station/query-list
+2023-06-25 22:23:23.070 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/station/query-list
+2023-06-25 22:23:24.591 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-list
+2023-06-25 22:23:26.124 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-list
+2023-06-25 22:24:02.223 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/save
+2023-06-25 22:24:02.443 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-list
+2023-06-25 22:24:43.078 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/save
+2023-06-25 22:24:43.128 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-list
+2023-06-25 22:28:55.986 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-list
+2023-06-25 22:29:16.684 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-list
+2023-06-25 22:29:18.311 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/delete/1672973931956539392
+2023-06-25 22:29:18.365 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-list
+2023-06-25 22:29:34.441 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/save
+2023-06-25 22:29:34.484 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-list
