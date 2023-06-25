@@ -274,3 +274,34 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 2023-06-25 22:44:15.775 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-station/query-list
 2023-06-25 22:44:18.097 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-station/delete/1672978996456984576
 2023-06-25 22:44:18.131 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-station/query-list
+2023-06-25 22:50:44.440 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-station/query-list
+2023-06-25 22:50:44.482 ERROR o.s.b.a.w.r.error.AbstractErrorWebExceptionHandler:102  [32m                  [0;39m [4908c7d3-28]  500 Server Error for HTTP GET "/business/admin/train-station/query-list?page=1&size=10"
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:8002
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/business/admin/train-station/query-list?page=1&size=10" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-25 22:51:37.417 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-station/query-list
+2023-06-25 22:51:44.480 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-station/query-list
+2023-06-25 22:51:45.821 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-carriage/query-list
+2023-06-25 22:51:52.536 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-carriage/save
+2023-06-25 22:51:52.591 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-carriage/query-list
+2023-06-25 22:51:55.176 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-carriage/save
+2023-06-25 22:51:55.229 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-carriage/query-list
+2023-06-25 22:51:57.280 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-carriage/delete/1672980937111113728
+2023-06-25 22:51:57.325 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-carriage/query-list
