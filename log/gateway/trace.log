@@ -23,3 +23,7 @@
 2023-06-26 19:03:44.117 INFO  com.jiawa.train.gateway.config.GateWayApplication :57   [32m                  [0;39m Started GateWayApplication in 4.666 seconds (process running for 5.549)
 2023-06-26 19:03:44.127 INFO  com.jiawa.train.gateway.config.GateWayApplication :17   [32m                  [0;39m 启动成功！！
 2023-06-26 19:03:44.128 INFO  com.jiawa.train.gateway.config.GateWayApplication :18   [32m                  [0;39m 网关地址: 	http://127.0.0.1:8000
+2023-06-26 19:06:10.441 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/station/query-list
+2023-06-26 19:06:42.810 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/station/query-list
+2023-06-26 19:06:55.518 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/station/save
+2023-06-26 19:06:55.615 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/station/query-list
