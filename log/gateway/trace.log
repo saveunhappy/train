@@ -75,3 +75,11 @@
 2023-06-26 19:46:35.425 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-all
 2023-06-26 19:46:36.167 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-all
 2023-06-26 19:46:39.216 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-list
+2023-06-26 19:57:53.837 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-list
+2023-06-26 19:58:00.772 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-station/query-list
+2023-06-26 19:58:01.299 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-carriage/query-list
+2023-06-26 19:58:02.001 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-station/query-list
+2023-06-26 19:58:02.854 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-all
+2023-06-26 19:58:32.834 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-station/query-list
+2023-06-26 19:58:33.599 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train/query-all
+2023-06-26 19:58:37.700 INFO  com.jiawa.train.gateway.config.LoginMemberFilter  :28   [32m                  [0;39m 不需要登录验证：/business/admin/train-station/query-list
