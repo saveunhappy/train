@@ -28,6 +28,15 @@ public class JobController {
     @Autowired
     private SchedulerFactoryBean schedulerFactoryBean;
 
+    @RequestMapping(value = "/run")
+    public CommonResp<Object> run(@RequestBody CronJobReq cronJobReq) throws SchedulerException {
+        String jobClassName = cronJobReq.getName();
+        String jobGroupName = cronJobReq.getGroup();
+        LOG.info("手动执行任务开始：{}, {}", jobClassName, jobGroupName);
+        schedulerFactoryBean.getScheduler().triggerJob(JobKey.jobKey(jobClassName, jobGroupName));
+        return new CommonResp<>();
+    }
+
     @RequestMapping(value = "/add")
     public CommonResp add(@RequestBody CronJobReq cronJobReq) {
         String jobClassName = cronJobReq.getName();
@@ -67,7 +76,7 @@ public class JobController {
         LOG.info("创建定时任务结束：{}", commonResp);
         return commonResp;
     }
-   //暂停
+
     @RequestMapping(value = "/pause")
     public CommonResp pause(@RequestBody CronJobReq cronJobReq) {
         String jobClassName = cronJobReq.getName();
@@ -85,7 +94,7 @@ public class JobController {
         LOG.info("暂停定时任务结束：{}", commonResp);
         return commonResp;
     }
-    //重启
+
     @RequestMapping(value = "/resume")
     public CommonResp resume(@RequestBody CronJobReq cronJobReq) {
         String jobClassName = cronJobReq.getName();
@@ -103,7 +112,7 @@ public class JobController {
         LOG.info("重启定时任务结束：{}", commonResp);
         return commonResp;
     }
-    //重置，可以修改的
+
     @RequestMapping(value = "/reschedule")
     public CommonResp reschedule(@RequestBody CronJobReq cronJobReq) {
         String jobClassName = cronJobReq.getName();
